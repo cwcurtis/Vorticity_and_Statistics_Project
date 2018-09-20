@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.8)  30 AUG 2018 11:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.8)  10 SEP 2018 12:17
 entering extended mode
 **D:/My*Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/random_vor
 ticity.tex
@@ -217,13 +217,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 55.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (0.1033pt too wide) in paragraph at lines 57--58
-\OT1/cmr/m/n/10.95 To de-scribe the evo-lu-tion of a nearly lin-ear wave-train 
-in a constant-vorticity-
- []
-
-[1
+) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ("D:\My Documents\Desktop\Vorticity_and_Statistics_Project_Git_Clone\random_vor
@@ -231,13 +225,13 @@ ticity.bbl") [2]
 ("D:\My Documents\Desktop\Vorticity_and_Statistics_Project_Git_Clone\random_vor
 ticity.aux") ) 
 Here is how much of TeX's memory you used:
- 2409 strings out of 493921
- 31779 string characters out of 3147276
- 87786 words of memory out of 3000000
- 5675 multiletter control sequences out of 15000+200000
+ 2410 strings out of 493921
+ 31788 string characters out of 3147276
+ 88789 words of memory out of 3000000
+ 5676 multiletter control sequences out of 15000+200000
  11083 words of font info for 42 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,12n,26p,694b,197s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,26p,815b,197s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
@@ -250,7 +244,7 @@ s/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on random_vorticity.pdf (2 pages, 149816 bytes).
+Output written on random_vorticity.pdf (2 pages, 151583 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

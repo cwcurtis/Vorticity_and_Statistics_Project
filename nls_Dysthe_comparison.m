@@ -1,4 +1,4 @@
-function nls_Dysthe_comparison(Llx,K,ep,rms,tf,dt,om,sig,width,Nens)
+function nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,Nens)
     
     % [-Llx,Llx] is size of simulation
     % K is number of modes in simulation
@@ -10,11 +10,13 @@ function nls_Dysthe_comparison(Llx,K,ep,rms,tf,dt,om,sig,width,Nens)
     % sig is surface tension
     % Nens is number of ensemble members
 
+    Llx = ep*Llx;
+    
     disp('Spatial mesh size is')
     disp(Llx/K)
     
     nmax = round(tf/dt); % Step size for time integrator and number of time steps
-    k0 = pi*ep/Llx*floor(Llx/(pi*ep));
+    k0 = 1;
     disp('Carrier wave number is')
     disp(k0)
     
@@ -39,13 +41,13 @@ function nls_Dysthe_comparison(Llx,K,ep,rms,tf,dt,om,sig,width,Nens)
     
     for jj=1:Nens
         arand = 2*pi*1i*rand(KT,1);
-        uints(:,jj) = KT*rms*sqrt(sqrt(pi)/(Llx*width))*rvec.*exp(arand);    
+        uints(:,jj) = KT*sqrt(sqrt(pi)/(Llx*width))*rvec.*exp(arand);    
         uints(Kc:Kuc,jj) = 0;
         %plot(Xmesh,abs(ifft(uints(:,jj))),'k','LineWidth',2)
         %pause
     end
     
-    aval = rms*sqrt(sqrt(pi)/(Llx*width)*sum(rvec.^2));
+    aval = sqrt(sqrt(pi)/(Llx*width)*sum(rvec.^2));
     disp('Root mean square NLS amplitude')
     disp(aval)
     disp('Minimal Stable Envelope Width')
