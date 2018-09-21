@@ -39,7 +39,7 @@ function nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,Nens)
     
     rvec = exp(-(Kmesh).^2/(2*width^2));
     kvec = pi/Llx*(-K+1:K)';
-    deadinds = abs(ifftshift(kvec)) > 3/sqrt(2)*width;
+    deadinds = abs(ifftshkvec) > 3/sqrt(2)*width;
     
     for jj=1:Nens
         arand = 2*pi*1i*rand(KT,1);

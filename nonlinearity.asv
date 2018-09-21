@@ -1,4 +1,4 @@
-function rhs = nonlinearity(eta1f,k0,cg,om,Om,ep,sig,ad,anl,Dx)
+function rhs = nonlinearity(eta1f,k0,cg,om,Om,ep,sig,ad,anl,Dx,L0i)
 
 s = sign(k0);
 
@@ -30,4 +30,4 @@ fvec = -1i*k0*om*eta1p.*eta11p + a1*meta1p.*dxeta1p + a2*eta1p.^2.*conj(dxeta1p)
 
 lonl = anl*fft(meta1p.*eta1p);
 
-rhs = (1i+2*ep*cg*s/(om-2*s*Om)*Dx).*lonl + ep*fft(fvec);
+rhs = *()lonl + ep*fft(fvec);

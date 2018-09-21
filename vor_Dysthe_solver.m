@@ -29,19 +29,19 @@ function w = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uint)
                 
     % Solve NLS equation in time    
     for nn=1:nmax            
-        a = dt*nonlinearity(w,k0,cg,om,Om,ep,sig,ad,anl,Dx,L0i);
+        a = dt*nonlinearity(w,k0,cg,om,Om,ep,sig,ad,anl,Dx);
         af = E.*(w+a/2);
         af(Kc:Kuc) = 0;
         
-        b = dt*nonlinearity(af,k0,cg,om,Om,ep,sig,ad,anl,Dx,L0i);
+        b = dt*nonlinearity(af,k0,cg,om,Om,ep,sig,ad,anl,Dx);
         bf = E.*w + b/2;
         bf(Kc:Kuc) = 0;
         
-        c = dt*nonlinearity(bf,k0,cg,om,Om,ep,sig,ad,anl,Dx,L0i);
+        c = dt*nonlinearity(bf,k0,cg,om,Om,ep,sig,ad,anl,Dx);
         cf = E2.*w + E.*c;
         cf(Kc:Kuc) = 0;
         
-        d = dt*nonlinearity(cf,k0,cg,om,Om,ep,sig,ad,anl,Dx,L0i);
+        d = dt*nonlinearity(cf,k0,cg,om,Om,ep,sig,ad,anl,Dx);
         d(Kc:Kuc) = 0;
         
         w = E2.*w + (E2.*a + 2*E.*(b+c) + d)/6;    
