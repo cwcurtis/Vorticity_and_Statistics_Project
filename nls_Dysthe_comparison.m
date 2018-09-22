@@ -39,12 +39,13 @@ function nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,Nens)
     
     rvec = exp(-(Kmesh).^2/(2*width^2));
     kvec = pi/Llx*(-K+1:K)';
-    deadinds = abs(ifftshift(kvec)) > 3/sqrt(2)*width;
+    %deadinds = abs(ifftshift(kvec)) > sqrt(2)*width;
     
     for jj=1:Nens
         arand = 2*pi*1i*rand(KT,1);
         uints(:,jj) = KT*sqrt(sqrt(pi)/(Llx*width))*rvec.*exp(arand);    
-        uints(deadinds,jj) = 0;
+        %uints(deadinds,jj) = 0;
+        uints(Kc:Kuc,jj) = 0;
         %plot(Xmesh,abs(ifft(uints(:,jj))),'k','LineWidth',2)
         %pause
     end   
@@ -60,11 +61,16 @@ function nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,Nens)
         dysthe_sol(:,jj) = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));
     end
     
-    nls_spec_mean = fftshift(abs(mean(nls_sol.*conj(nls_sol),2))/KT^2);
-    dysthe_spec_mean = fftshift(abs(mean(dysthe_sol.*conj(dysthe_sol),2))/KT^2);
-    mean_int = fftshift(abs(mean(uints.*conj(uints),2))/KT^2);
+    nls_spec_mean = ep^2*fftshift(abs(mean(nls_sol.*conj(nls_sol),2))/KT^2);
+    dysthe_spec_mean = ep^2*fftshift(abs(mean(dysthe_sol.*conj(dysthe_sol),2))/KT^2);
+    mean_int = ep^2*fftshift(abs(mean(uints.*conj(uints),2))/KT^2);
     
     
-    plot(kvec,mean_int,'k-',kvec,nls_spec_mean,'k--',kvec,dysthe_spec_mean,'k-.','LineWidth',2)
+    plot(ep*kvec+k0,mean_int,'k-',ep*kvec+k0,nls_spec_mean,'k--',ep*kvec+k0,dysthe_spec_mean,'k-.','LineWidth',2)
+    h = set(gca,'FontSize',30);
+    set(h,'Interpreter','LaTeX')
+    xlabel('$k$','Interpreter','LaTeX','FontSize',30)
+    %ylabel('$\left<\left|\hat{\eta}(k,t_{f})\right|^{2}\right>$','Interpreter','LaTeX','FontSize',30)
+    legend({'$Initial$','$NLS$','$Dysthe$'},'Interpreter','LaTeX','FontSize',30)
 end
 
