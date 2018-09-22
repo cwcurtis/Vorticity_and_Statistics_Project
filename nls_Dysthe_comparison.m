@@ -70,7 +70,7 @@ function nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,Nens)
     h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
     xlabel('$k$','Interpreter','LaTeX','FontSize',30)
-    %ylabel('$\left<\left|\hat{\eta}(k,t_{f})\right|^{2}\right>$','Interpreter','LaTeX','FontSize',30)
+    ylabel('$\left<\left|\hat{\eta}(k,t_{f})\right|^{2}\right>$','Interpreter','LaTeX','FontSize',30)
     legend({'$Initial$','$NLS$','$Dysthe$'},'Interpreter','LaTeX','FontSize',30)
 end
 
