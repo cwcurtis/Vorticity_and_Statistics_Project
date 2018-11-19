@@ -57,8 +57,8 @@ function nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,Nens)
     disp(sqrt(2*anl/ad))
     
     parfor jj=1:Nens
-        nls_sol(:,jj) = nls_solver(K,Llx,nmax,ad,anl,dt,uints(:,jj));
-        dysthe_sol(:,jj) = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));
+        nls_sol(:,jj) = nls_solver_slider(K,Llx,nmax,ad,anl,dt,uints(:,jj));
+        dysthe_sol(:,jj) = vor_Dysthe_solver_slider(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));
     end
     
     nls_spec_mean = ep^2*fftshift(abs(mean(nls_sol.*conj(nls_sol),2))/KT^2);
