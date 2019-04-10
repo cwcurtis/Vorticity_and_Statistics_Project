@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.8)  9 APR 2019 16:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.8)  10 APR 2019 13:50
 entering extended mode
 **D:/My*Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/ra
 ndom_vorticity.tex
@@ -220,7 +220,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4] [5]
 Package epstopdf Info: Source file: <omega_n1_ep0pt1_dt5en4.eps>
 (epstopdf)                    date: 2019-03-08 12:17:18
 (epstopdf)                    size: 32238 bytes
@@ -230,15 +230,15 @@ f>
 (epstopdf)                    size: 8908 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega_n1_ep0pt1_dt5en4-eps-
 converted-to.pdf omega_n1_ep0pt1_dt5en4.eps>
-(epstopdf)             \includegraphics on input line 182.
+(epstopdf)             \includegraphics on input line 193.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf, id=28, 794.97pt x 540.0175pt>
+<omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf, id=31, 794.97pt x 540.0175pt>
 File: omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf>
 Package pdftex.def Info: omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf used on in
-put line 182.
+put line 193.
 (pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
 Package epstopdf Info: Source file: <omega_n1_ep0pt04.eps>
 (epstopdf)                    date: 2019-03-08 12:20:36
@@ -248,15 +248,15 @@ Package epstopdf Info: Source file: <omega_n1_ep0pt04.eps>
 (epstopdf)                    size: 9345 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega_n1_ep0pt04-eps-conver
 ted-to.pdf omega_n1_ep0pt04.eps>
-(epstopdf)             \includegraphics on input line 184.
+(epstopdf)             \includegraphics on input line 195.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega_n1_ep0pt04-eps-converted-to.pdf, id=29, 794.97pt x 540.0175pt>
+<omega_n1_ep0pt04-eps-converted-to.pdf, id=32, 794.97pt x 540.0175pt>
 File: omega_n1_ep0pt04-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega_n1_ep0pt04-eps-converted-to.pdf>
 Package pdftex.def Info: omega_n1_ep0pt04-eps-converted-to.pdf used on input li
-ne 184.
+ne 195.
 (pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
 Package epstopdf Info: Source file: <omega_n1_ep0pt1_dt5en4_width12.eps>
 (epstopdf)                    date: 2019-03-08 12:19:09
@@ -267,16 +267,16 @@ ed-to.pdf>
 (epstopdf)                    size: 18964 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega_n1_ep0pt1_dt5en4_widt
 h12-eps-converted-to.pdf omega_n1_ep0pt1_dt5en4_width12.eps>
-(epstopdf)             \includegraphics on input line 194.
+(epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf, id=30, 794.97pt x 540.017
+<omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf, id=33, 794.97pt x 540.017
 5pt>
 File: omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf Graphic file (type pd
 f)
  <use omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf>
 Package pdftex.def Info: omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf us
-ed on input line 194.
+ed on input line 205.
 (pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
 Package epstopdf Info: Source file: <omega_n1_ep0pt04_width12.eps>
 (epstopdf)                    date: 2019-03-08 12:26:15
@@ -287,20 +287,16 @@ pdf>
 (epstopdf)                    size: 17360 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega_n1_ep0pt04_width12-ep
 s-converted-to.pdf omega_n1_ep0pt04_width12.eps>
-(epstopdf)             \includegraphics on input line 196.
+(epstopdf)             \includegraphics on input line 207.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega_n1_ep0pt04_width12-eps-converted-to.pdf, id=31, 794.97pt x 540.0175pt>
+<omega_n1_ep0pt04_width12-eps-converted-to.pdf, id=34, 794.97pt x 540.0175pt>
 File: omega_n1_ep0pt04_width12-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega_n1_ep0pt04_width12-eps-converted-to.pdf>
 Package pdftex.def Info: omega_n1_ep0pt04_width12-eps-converted-to.pdf used on 
-input line 196.
+input line 207.
 (pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
- [5] [6 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Wri
-teup/omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf> <D:/My Documents/Desktop/Vort
-icity_and_Statistics_Project_Git_Clone/Writeup/omega_n1_ep0pt04-eps-converted-t
-o.pdf>]
 Package epstopdf Info: Source file: <omega0_ep0pt1.eps>
 (epstopdf)                    date: 2019-03-08 12:52:40
 (epstopdf)                    size: 32954 bytes
@@ -309,15 +305,15 @@ Package epstopdf Info: Source file: <omega0_ep0pt1.eps>
 (epstopdf)                    size: 9037 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega0_ep0pt1-eps-converted
 -to.pdf omega0_ep0pt1.eps>
-(epstopdf)             \includegraphics on input line 212.
+(epstopdf)             \includegraphics on input line 223.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega0_ep0pt1-eps-converted-to.pdf, id=45, 794.97pt x 540.0175pt>
+<omega0_ep0pt1-eps-converted-to.pdf, id=35, 794.97pt x 540.0175pt>
 File: omega0_ep0pt1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega0_ep0pt1-eps-converted-to.pdf>
 Package pdftex.def Info: omega0_ep0pt1-eps-converted-to.pdf used on input line 
-212.
+223.
 (pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
 Package epstopdf Info: Source file: <omega0_ep0pt04.eps>
 (epstopdf)                    date: 2019-03-08 12:56:21
@@ -327,15 +323,15 @@ Package epstopdf Info: Source file: <omega0_ep0pt04.eps>
 (epstopdf)                    size: 9485 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega0_ep0pt04-eps-converte
 d-to.pdf omega0_ep0pt04.eps>
-(epstopdf)             \includegraphics on input line 214.
+(epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega0_ep0pt04-eps-converted-to.pdf, id=46, 794.97pt x 540.0175pt>
+<omega0_ep0pt04-eps-converted-to.pdf, id=36, 794.97pt x 540.0175pt>
 File: omega0_ep0pt04-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega0_ep0pt04-eps-converted-to.pdf>
 Package pdftex.def Info: omega0_ep0pt04-eps-converted-to.pdf used on input line
- 214.
+ 225.
 (pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
 Package epstopdf Info: Source file: <omega0_ep0pt1_width6.eps>
 (epstopdf)                    date: 2019-03-08 12:54:45
@@ -346,15 +342,15 @@ Package epstopdf Info: Source file: <omega0_ep0pt1_width6.eps>
 (epstopdf)                    size: 18032 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega0_ep0pt1_width6-eps-co
 nverted-to.pdf omega0_ep0pt1_width6.eps>
-(epstopdf)             \includegraphics on input line 224.
+(epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega0_ep0pt1_width6-eps-converted-to.pdf, id=47, 794.97pt x 540.0175pt>
+<omega0_ep0pt1_width6-eps-converted-to.pdf, id=37, 794.97pt x 540.0175pt>
 File: omega0_ep0pt1_width6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega0_ep0pt1_width6-eps-converted-to.pdf>
 Package pdftex.def Info: omega0_ep0pt1_width6-eps-converted-to.pdf used on inpu
-t line 224.
+t line 235.
 (pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
 Package epstopdf Info: Source file: <omega0_ep0pt04_width6.eps>
 (epstopdf)                    date: 2019-03-08 12:57:07
@@ -365,23 +361,16 @@ Package epstopdf Info: Source file: <omega0_ep0pt04_width6.eps>
 (epstopdf)                    size: 15341 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega0_ep0pt04_width6-eps-c
 onverted-to.pdf omega0_ep0pt04_width6.eps>
-(epstopdf)             \includegraphics on input line 226.
+(epstopdf)             \includegraphics on input line 237.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega0_ep0pt04_width6-eps-converted-to.pdf, id=48, 794.97pt x 540.0175pt>
+<omega0_ep0pt04_width6-eps-converted-to.pdf, id=38, 794.97pt x 540.0175pt>
 File: omega0_ep0pt04_width6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega0_ep0pt04_width6-eps-converted-to.pdf>
 Package pdftex.def Info: omega0_ep0pt04_width6-eps-converted-to.pdf used on inp
-ut line 226.
+ut line 237.
 (pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
- [7 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup
-/omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf> <D:/My Documents/Desktop/
-Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega_n1_ep0pt04_width12-eps
--converted-to.pdf>] [8 <D:/My Documents/Desktop/Vorticity_and_Statistics_Projec
-t_Git_Clone/Writeup/omega0_ep0pt1-eps-converted-to.pdf> <D:/My Documents/Deskto
-p/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega0_ep0pt04-eps-convert
-ed-to.pdf>]
 Package epstopdf Info: Source file: <omega1_ep0pt1.eps>
 (epstopdf)                    date: 2019-03-08 12:59:11
 (epstopdf)                    size: 31980 bytes
@@ -390,15 +379,15 @@ Package epstopdf Info: Source file: <omega1_ep0pt1.eps>
 (epstopdf)                    size: 8709 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega1_ep0pt1-eps-converted
 -to.pdf omega1_ep0pt1.eps>
-(epstopdf)             \includegraphics on input line 240.
+(epstopdf)             \includegraphics on input line 251.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega1_ep0pt1-eps-converted-to.pdf, id=68, 794.97pt x 540.0175pt>
+<omega1_ep0pt1-eps-converted-to.pdf, id=39, 794.97pt x 540.0175pt>
 File: omega1_ep0pt1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega1_ep0pt1-eps-converted-to.pdf>
 Package pdftex.def Info: omega1_ep0pt1-eps-converted-to.pdf used on input line 
-240.
+251.
 (pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
 Package epstopdf Info: Source file: <omega1_ep0pt04.eps>
 (epstopdf)                    date: 2019-03-08 13:00:39
@@ -408,15 +397,15 @@ Package epstopdf Info: Source file: <omega1_ep0pt04.eps>
 (epstopdf)                    size: 9131 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega1_ep0pt04-eps-converte
 d-to.pdf omega1_ep0pt04.eps>
-(epstopdf)             \includegraphics on input line 242.
+(epstopdf)             \includegraphics on input line 253.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega1_ep0pt04-eps-converted-to.pdf, id=69, 794.97pt x 540.0175pt>
+<omega1_ep0pt04-eps-converted-to.pdf, id=40, 794.97pt x 540.0175pt>
 File: omega1_ep0pt04-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega1_ep0pt04-eps-converted-to.pdf>
 Package pdftex.def Info: omega1_ep0pt04-eps-converted-to.pdf used on input line
- 242.
+ 253.
 (pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
 Package epstopdf Info: Source file: <omega1_ep0pt1_width3.eps>
 (epstopdf)                    date: 2019-03-08 12:59:54
@@ -427,15 +416,15 @@ Package epstopdf Info: Source file: <omega1_ep0pt1_width3.eps>
 (epstopdf)                    size: 16206 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega1_ep0pt1_width3-eps-co
 nverted-to.pdf omega1_ep0pt1_width3.eps>
-(epstopdf)             \includegraphics on input line 252.
+(epstopdf)             \includegraphics on input line 263.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega1_ep0pt1_width3-eps-converted-to.pdf, id=70, 794.97pt x 540.0175pt>
+<omega1_ep0pt1_width3-eps-converted-to.pdf, id=41, 794.97pt x 540.0175pt>
 File: omega1_ep0pt1_width3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega1_ep0pt1_width3-eps-converted-to.pdf>
 Package pdftex.def Info: omega1_ep0pt1_width3-eps-converted-to.pdf used on inpu
-t line 252.
+t line 263.
 (pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
 Package epstopdf Info: Source file: <omega1_ep0pt04_width3.eps>
 (epstopdf)                    date: 2019-03-08 13:06:08
@@ -446,35 +435,48 @@ Package epstopdf Info: Source file: <omega1_ep0pt04_width3.eps>
 (epstopdf)                    size: 13712 bytes
 (epstopdf)             Command: <epstopdf --outfile=omega1_ep0pt04_width3-eps-c
 onverted-to.pdf omega1_ep0pt04_width3.eps>
-(epstopdf)             \includegraphics on input line 254.
+(epstopdf)             \includegraphics on input line 265.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega1_ep0pt04_width3-eps-converted-to.pdf, id=71, 794.97pt x 540.0175pt>
+<omega1_ep0pt04_width3-eps-converted-to.pdf, id=42, 794.97pt x 540.0175pt>
 File: omega1_ep0pt04_width3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use omega1_ep0pt04_width3-eps-converted-to.pdf>
 Package pdftex.def Info: omega1_ep0pt04_width3-eps-converted-to.pdf used on inp
-ut line 254.
+ut line 265.
 (pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
 
 ("D:\My Documents\Desktop\Vorticity_and_Statistics_Project_Git_Clone\Writeup\ra
-ndom_vorticity.bbl" [9 <D:/My Documents/Desktop/Vorticity_and_Statistics_Projec
-t_Git_Clone/Writeup/omega0_ep0pt1_width6-eps-converted-to.pdf> <D:/My Documents
-/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega0_ep0pt04_widt
-h6-eps-converted-to.pdf>] [10 <D:/My Documents/Desktop/Vorticity_and_Statistics
-_Project_Git_Clone/Writeup/omega1_ep0pt1-eps-converted-to.pdf> <D:/My Documents
-/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega1_ep0pt04-eps-
-converted-to.pdf>] [11 <D:/My Documents/Desktop/Vorticity_and_Statistics_Projec
-t_Git_Clone/Writeup/omega1_ep0pt1_width3-eps-converted-to.pdf> <D:/My Documents
-/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega1_ep0pt04_widt
-h3-eps-converted-to.pdf>]) [12]
+ndom_vorticity.bbl" [6]
+Overfull \vbox (24.32079pt too high) has occurred while \output is active []
+
+
+[7 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/
+omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf> <D:/My Documents/Desktop/Vorticity
+_and_Statistics_Project_Git_Clone/Writeup/omega_n1_ep0pt04-eps-converted-to.pdf
+>] [8 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Write
+up/omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf> <D:/My Documents/Deskto
+p/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega_n1_ep0pt04_width12-e
+ps-converted-to.pdf>] [9 <D:/My Documents/Desktop/Vorticity_and_Statistics_Proj
+ect_Git_Clone/Writeup/omega0_ep0pt1-eps-converted-to.pdf> <D:/My Documents/Desk
+top/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega0_ep0pt04-eps-conve
+rted-to.pdf>]) [10 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Gi
+t_Clone/Writeup/omega0_ep0pt1_width6-eps-converted-to.pdf> <D:/My Documents/Des
+ktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega0_ep0pt04_width6-e
+ps-converted-to.pdf>] [11 <D:/My Documents/Desktop/Vorticity_and_Statistics_Pro
+ject_Git_Clone/Writeup/omega1_ep0pt1-eps-converted-to.pdf> <D:/My Documents/Des
+ktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega1_ep0pt04-eps-conv
+erted-to.pdf>] [12 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Gi
+t_Clone/Writeup/omega1_ep0pt1_width3-eps-converted-to.pdf> <D:/My Documents/Des
+ktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega1_ep0pt04_width3-e
+ps-converted-to.pdf>]
 ("D:\My Documents\Desktop\Vorticity_and_Statistics_Project_Git_Clone\Writeup\ra
 ndom_vorticity.aux") ) 
 Here is how much of TeX's memory you used:
- 2507 strings out of 493921
- 34599 string characters out of 3147276
- 90909 words of memory out of 3000000
- 5745 multiletter control sequences out of 15000+200000
+ 2508 strings out of 493921
+ 34607 string characters out of 3147276
+ 93918 words of memory out of 3000000
+ 5746 multiletter control sequences out of 15000+200000
  12319 words of font info for 46 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,12n,26p,1353b,306s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -493,7 +495,7 @@ Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on random_vorticity.pdf (12 pages, 342171 bytes).
+Output written on random_vorticity.pdf (12 pages, 342375 bytes).
 PDF statistics:
  153 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

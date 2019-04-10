@@ -118,7 +118,28 @@ where the reciprocal of the Bond number, $\tilde{\sigma}$, is given by
 \]
 We note that we have tacitly assumed $\omega = \mathcal{O}(1)$.  In physical terms, this implies that $\omega$ is comparable to the natural time scale of this problem, $\sqrt{L/g}$.  If we were to assume $\omega$ were of larger magnitude, the problem would no longer be weakly nonlinear and would be much less amenable to asymptotic analysis.  Therefore, throughout the remainder of the paper, we assume that the vorticity is not too large.
 
-In non-dimensional variables, we model the evolution of a relatively small free-fluid surface over infinitely-deep water $z=\epsilon \eta(x,t)$ via the expansion 
+By expanding Equation \eqref{integro1} and taking inverse Fourier transforms, we can derive the first three terms of the corresponding Dirichlet-to-Neumann Operator (DNO) expansion, so that we find
+\begin{equation}
+\eta_{t} = G_{0}Q + \epsilon G_{1}Q + \epsilon^{2}G_{2}Q,
+\label{dnoexp}
+\end{equation}
+where
+\begin{align*}
+G_{0}Q = & -\mathcal{H}Q\\
+G_{1}Q = & \mathcal{H}\pd_{x}\left(\eta G_{0}Q\right) - \pd_{x}\left(\eta Q + \frac{\omega}{2}\eta^{2}\right)\\
+G_{2}Q = & \mathcal{H}\pd_{x}\left(\eta G_{1}Q\right) + \frac{1}{2}\pd_{x}^{2}\left(\eta^{2}G_{0}Q \right) + \pd_{x}^{2}\mathcal{H}\left(\frac{1}{2}\eta^{2}Q + \frac{\omega}{3}\eta^{3}\right), 
+\end{align*}
+where $\mathcal{H}$ denotes the Hilbert transform so that 
+\[
+\mathcal{H}f = \frac{1}{2\pi}\int_{\mathbb{R}}dk~ e^{ikx}  i\mbox{sgn}(k) \hat{f}(k),
+\]
+where $\hat{f}(k)$ is the Fourier transform of $f(x)$ defined by
+\[
+\hat{f}(k) = \int_{\mathbb{R}}dx~ e^{-ikx}f(x).
+\]
+Using the DNO expansion in Equation \eqref{dnoexp}, we can rewrite Equation \eqref{berexp} an an evolution equation for $Q_{t}$, thereby giving us a closed system in terms of surface variables alone.  The system of equations given by Equations \eqref{dnoexp} and \eqref{berexp} we denote as the Full-Euler Equations (FEEs).  
+
+As is well known by now, in non-dimensional variables, we can model the evolution of a relatively small free-fluid surface over infinitely-deep water $z=\epsilon \eta(x,t)$ via the expansion 
 \begin{multline*}
 \eta(x,t) = \eta_{1}(\xi,\tau)e^{i\theta(x,t)} + \eta^{\ast}_{1}(\xi,\tau)e^{-i\theta(x,t)}\\
 + \epsilon\left(\eta_{0}(\xi,\tau) + \eta_{2}(\xi,\tau)e^{2i\theta(x,t)} + \eta^{\ast}_{2}(\xi,\tau)e^{-2i\theta(x,t)}\right) + \mathcal{O}\left(\epsilon^{2} \right)
@@ -140,17 +161,7 @@ c_{g} = & \frac{1+3\tilde{\sigma}k_{0}^{2}}{2s\Omega - \omega},\\
 \alpha_{nl}(k_{0},\omega) = & \frac{k_{0}\left( sk_{0}^{3}\left(8 + \tilde{\sigma}k_{0}^{2} + 2(\tilde{\sigma}k_{0}^{2})^{2}\right) + \omega \alpha_{v}\right)}{\left(2s\Omega -\omega\right)(1+c_{g}\omega)\left(4\Omega^2-s(2k_{0}(1+4\tilde{\sigma}k_{0}^{2})+2\omega\Omega)\right)}.
 \end{align*}
 
-The second model we study in this paper is a higher-order generalization of the NLSE which we call the vor-Dysthe Equation (VDE) which was derived in \cite{curtis8}.  In this paper, we use it in the form 
-\[
-i\pd_{\tau}\eta_{1} + \alpha_{d}\pd_{\xi}^{2}\eta_{1} + \alpha_{nl}\left|\eta_{1} \right|^{2}\eta_{1} - \epsilon\frac{i(2sc_{g}\alpha_{d}+\tilde{\sigma})}{\omega-2s\Omega}\pd^{3}_{\xi}\eta_{1} + i\epsilon\mathcal{N}(\eta_{1}) = 0, 
-\]
-where
-\[
-\mathcal{N}(\eta_{1}) = \tilde{\alpha}_{1}\left|\eta_{1}\right|^{2}\pd_{\xi}\eta_{1} + \tilde{\alpha}_{2} \eta_{1}^{2}\pd_{\xi}\eta^{\ast}_{1} + i\tilde{\alpha}_{3}\eta_{1}\mathcal{H}\pd_{\xi}\left| \eta_{1}\right|^{2} + \tilde{\alpha}_{4}\pd_{\xi}\left| \eta_{1}\right|^{2}\eta_{1},
-\]
-and $\mathcal{H}$ is the Hilbert transform.  The terms $\tilde{\alpha}_{j}$ are straightforward to derive with the aid of a program like SAGE, but they are lengthy and not illuminative, and thus they are ommitted for the sake of brevity.  
-
-To generate simulations, we start both the NLSE and VDE from the same collection of $2L$ periodic-initial conditions
+To generate simulations, we start both the NLSE and FEE from the same collection of $2L$ periodic-initial conditions
 \[
 \eta_{1}(\xi,0) = \epsilon_{rms}\sqrt{\frac{\delta \tilde{k}}{\sigma\sqrt{\pi}}} \sum_{k=-K+1}^{K}e^{-\tilde{k}^{2}/2\sigma^{2}}e^{i\theta_{k}}e^{i\tilde{k}\xi}, ~ \tilde{k} = \frac{\pi k}{L},
 \]

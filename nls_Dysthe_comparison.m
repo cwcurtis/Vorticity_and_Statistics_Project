@@ -59,13 +59,16 @@ function nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,Nens)
     disp(aval)
     disp('Minimal Stable Envelope Width')
     disp(sqrt(2*anl/ad))
-    
+    tic
+    %Since these work over such different time scales.  
     parfor jj=1:Nens
         nls_sol(:,jj) = nls_solver(K,Llx,nmax,ad,anl,dt,uints(:,jj));
-        % dysthe_sol(:,jj) = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));
-        act_sol(:,jj) = afm_dno_solver(K,k0,ep,Llxf,sig,om,Om,tf/ep^2,dt,uintsac(:,jj))
+        % dysthe_sol(:,jj) = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));        
+    end    
+    parfor jj=1:Nens
+       act_sol(:,jj) = afm_dno_solver(K,k0,ep,Llxf,sig,om,Om,tf/ep^2,dt,uintsac(:,jj)) 
     end
-    
+    toc
     nls_spec_mean = (ep/KT)^2*fftshift(abs(mean(nls_sol.*conj(nls_sol),2)));
     % dysthe_spec_mean = ep^2*fftshift(abs(mean(dysthe_sol.*conj(dysthe_sol),2))/KT^2);
     mean_int = (ep/KT)^2*fftshift(abs(mean(uints.*conj(uints),2)));
