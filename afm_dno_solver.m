@@ -1,9 +1,9 @@
 function etanls = afm_dno_solver(K,k0,ep,Llx,sig,om,Om,tf,dt,uintsac)
     
     uintphys = ifft(uintsac);
-    etan = ep*fft(2*real(uintphys));
+    etan = fft(2*real(uintphys));
     %etan(1) = 0;
-    Qn = ep*Om*fft(-2*real(uintphys));
+    Qn = Om*fft(-2*real(uintphys));
     Qn(1) = 0; %Enforce zero average in the surface velocity
     
     KT = 2*K;

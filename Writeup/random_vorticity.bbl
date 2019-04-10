@@ -36,4 +36,14 @@ C.W. Curtis, J.C. Carter, and H.~Kalisch.
   of linear shear currents.
 \newblock {\em J. Fluid Mech.}, to appear.
 
+\bibitem{ashton}
+A.C.L. Ashton and A.S. Fokas.
+\newblock A non-local formulation of rotational water waves.
+\newblock {\em J. Fluid Mech.}, 689:129--148, 2011.
+
+\bibitem{afm}
+M.J. Ablowitz, A.S. Fokas, and Z.H. Musslimani.
+\newblock On a new non-local formulation of water waves.
+\newblock {\em J. Fluid Mech.}, 562:313--343, 2006.
+
 \end{thebibliography}

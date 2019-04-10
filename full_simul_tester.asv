@@ -1,6 +1,6 @@
 function full_simul_tester(K,ep,Llx,sig,om,tf,dt,width)
 
-    k0 = 1;
+    k0 = 10;
     [Om,cg,ad,anl] = param_maker(k0,om,sig);    
     Xmesh = -Llx:Llx/K:Llx-Llx/K;
     KT = 2*K;
@@ -20,8 +20,8 @@ function full_simul_tester(K,ep,Llx,sig,om,tf,dt,width)
     act_sol = afm_dno_solver(K,k0,ep,Llx,sig,om,Om,tf,dt,uintsac);
     
     figure(1)
-    plot(fftshift(Kmesh),(ep/KT)^2*fftshift(abs(uintsac.*conj(uintsac))),'k-',fftshift(Kmesh)+k0,(ep/KT)^2*fftshift(abs(act_sol.*conj(act_sol))),'k--','LineWidth',2)
+    plot(fftshift(Kmesh),ep^2*fftshift(abs(uintsac.*conj(uintsac))),'k-',fftshift(Kmesh)+k0,ep^2*fftshift(abs(act_sol.*conj(act_sol))),'k--','LineWidth',2)
     
     figure(2)
-    plot(Xmesh,ep*real(ifft(act_sol)),'k-','LineWidth',2)
+    plot(Xmesh,real(ifft(act_sol)),'k)
     

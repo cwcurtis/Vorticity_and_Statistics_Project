@@ -55,6 +55,69 @@ There is now a relatively wide range of literature which shows that nonlinear in
 However, many physical effects were ignored in the derivation and verification of the results described above. In particular, vorticity was not taken into account, thereby ignoring a central mechanism for the transfer of energy across length scales in oceanic flows.  Thus, building on the work in \cite{thomas2012nonlinear} and \cite{curtis8}, we numerically explore the analytic stability condition derived in \cite{alber}, focusing in particular on the impact that vorticity plays in controlling the effective width for the onset of MI.  Moving beyond just examining the properties of the NLS equation with vorticity, we look at the statistical properties of solutions to a higher-order model, the vor-Dysthe equation derived in \cite{curtis8}.  As shown in \cite{onorato}, the higher-order terms associated with the Dysthe equation can have significant impacts on the statistics of the waves, so it is a nontrivial question to examine how the vorticity will interact with these higher-order nonlinearities.  
 
 \section*{Modeling and Stability Theory}
+We examine the unsteady nonlinear wave propagation over a constant shear current.  To do this, we assume the fluid velocity has the form
+\[
+{\bf u} = u({\bf x},t)\hat{{\bf x}} + w({\bf x},t)\hat{{\bf z}} = \omega z\hat{{\bf x}} + \nabla \phi,
+\]
+where $\phi$ is a harmonic function.  We restrict fluid motion to the $(x,z)$-plane, thereby ignoring transverse variations in the $y$ dimension.   Following standard arguments, e.g.~see \cite{ashton}, the dynamics of the fluid can be determined by solving the free boundary value problem
+\begin{align}
+\Delta \phi = 0, & & -\infty< z < \eta(x,t), \nonumber \\
+\eta_{t} +\left(\omega\eta+\phi_{x}\right)\eta_{x} - \phi_{z} = 0, & & z=\eta(x,t), \label{kine}\\
+\phi_{t} + \omega\pd_{x}^{-1}\eta_{t} + \frac{1}{2} \left|{\bf
+    u}\right|^{2} + g\eta -
+\frac{\sigma}{\rho}\pd_{x}\frac{\eta_{x}}{\sqrt{1+\eta_{x}^{2}}}= 0, &
+& z=\eta(x,t), \label{bernou}\\
+\lim_{z\rightarrow -\infty} \phi_{z} = 0, \nonumber
+\end{align}
+where $\eta$ represents the free surface displacement, and $g$, $\rho$, and $\sigma$ represent the acceleration due to gravity, the fluid density, and the coefficient of surface tension respectively.
+
+By choosing a characteristic wave height $a$ and wave length $L$, all quantities can be non-dimensionalized via
+\begin{align*}
+\tilde{x} = \frac{x}{L}, ~\tilde{z} = \frac{z}{L}, ~ \tilde{t} = \sqrt{\frac{g}{L}}~t, ~\omega = \sqrt{\frac{g}{L}}~\tilde{\omega}, \\
+\eta = a \tilde{\eta}, ~ \phi  = a\sqrt{gL}~\tilde{\phi} , ~ \epsilon = \frac{a}{L}.
+\end{align*}
+By following the AFM approach described in \cite{afm,ashton} and dropping the tildes, the kinematic boundary condition, Equation \eqref{kine}, can be written in terms of surface variables alone via the integro-differential equation
+\begin{equation}
+\int_{\mathbb{R}}dx~e^{-ikx}e^{\epsilon|k|\eta}\left(\eta_{t} +
+  \epsilon \omega \eta \eta_{x} + i \mbox{sgn}(k)Q \right) = 0, ~
+k\neq 0,
+\label{kine2}
+\end{equation}
+where $Q=q_{x}$, $q(x,t) = \phi(x,\eta(x,t),t)$.  By integrating over $\mathbb{R}$, we are assuming that both $\eta$ and $Q$ decay to zero sufficiently rapidly in the far field.  We can also readily derive a nearly identical expression on domains periodic in the horizontal variable $x$, in which case Equation \eqref{kine2} becomes
+\begin{equation}
+\int_{-L_{p}/2}^{L_{p}/2}dx~e^{-ikx}e^{\epsilon|k|\eta}\left(\eta_{t} +
+  \epsilon \omega \eta \eta_{x} + i \mbox{sgn}(k)Q \right) = 0, ~ k = \frac{2\pi m}{L_{p}}, ~ m\in \mathbb{Z}\backslash{0},
+\label{integro1per}
+\end{equation}
+where $L_p$ is the spatial period.  Throughout the remainder of this section we only present results over the real line, $\mathbb{R}$, since identical results can be derived for the periodic case.
+Lastly, we note that if in Equation \eqref{kine2} we approach $k=0$ from both the left and the right, we get the equations
+\[
+\int_{\mathbb{R}}dx \left(\eta_{t} + i Q \right) = 0, ~ \int_{\mathbb{R}}dx \left(\eta_{t} - i Q \right) = 0.
+\]
+Thus we get the identities
+\begin{align}
+\pd_{t}\int_{\mathbb{R}} dx ~\eta(x,t) & = 0, \label{zavsurf}\\
+\int_{\mathbb{R}} dx ~Q(x,t) & = 0. \label{zavpot}
+\end{align}
+
+Taylor expanding Equation (\ref{kine2}) up to $\mathcal{O}(\epsilon^3)$ for $k\neq 0$ gives
+\begin{multline}
+\int_{\mathbb{R}}dx~e^{-ikx}\left(1 + \epsilon |k|\eta + \frac{\epsilon^{2}|k|^{2}\eta^{2}}{2} \right)\left(\eta_{t} + i \mbox{sgn}(k)Q \right) \\
++ \epsilon \omega \int_{\mathbb{R}}dx~e^{-ikx}\left(1 + \epsilon |k|\eta \right) \eta \eta_{x} = 0.
+\label{integro1}
+\end{multline}
+Transforming into surface variables and Taylor expanding Equation \eqref{bernou}, Bernoulli's equation, up to $\mathcal{O}(\epsilon^3)$ gives
+\begin{multline}
+Q_{t} + \omega \eta_{t} + \eta_{x} - \tilde{\sigma}\eta_{xxx} + \frac{\epsilon}{2}\pd_{x}\left(-\eta_{t}^{2} + (Q+\omega \eta)^{2} \right)\\
++ \epsilon^{2}\pd_{x}\left( \frac{3}{2}\tilde{\sigma}\eta_{x}^{2}\eta_{xx} - \eta_{t}\eta_{x} \left(Q  + \omega \eta \right) \right)  = 0,
+\label{berexp}
+\end{multline}
+where the reciprocal of the Bond number, $\tilde{\sigma}$, is given by
+\[
+\tilde{\sigma} = \frac{\sigma}{\rho g L^2}.
+\]
+We note that we have tacitly assumed $\omega = \mathcal{O}(1)$.  In physical terms, this implies that $\omega$ is comparable to the natural time scale of this problem, $\sqrt{L/g}$.  If we were to assume $\omega$ were of larger magnitude, the problem would no longer be weakly nonlinear and would be much less amenable to asymptotic analysis.  Therefore, throughout the remainder of the paper, we assume that the vorticity is not too large.
+
 In non-dimensional variables, we model the evolution of a relatively small free-fluid surface over infinitely-deep water $z=\epsilon \eta(x,t)$ via the expansion 
 \begin{multline*}
 \eta(x,t) = \eta_{1}(\xi,\tau)e^{i\theta(x,t)} + \eta^{\ast}_{1}(\xi,\tau)e^{-i\theta(x,t)}\\

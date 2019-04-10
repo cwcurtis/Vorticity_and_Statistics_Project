@@ -61,21 +61,23 @@ function nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,Nens)
     disp(sqrt(2*anl/ad))
     
     parfor jj=1:Nens
-        nls_sol(:,jj) = nls_solver_slider(K,Llx,nmax,ad,anl,dt,uints(:,jj));
-        dysthe_sol(:,jj) = vor_Dysthe_solver_slider(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));
-        act_sol(:,jj) = afm_dno_solver(K,k0,ep,Llxf,sig,om,Om,tf/ep^2,1e2*dt,uintsac(:,jj))
+        nls_sol(:,jj) = nls_solver(K,Llx,nmax,ad,anl,dt,uints(:,jj));
+        % dysthe_sol(:,jj) = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));
+        act_sol(:,jj) = afm_dno_solver(K,k0,ep,Llxf,sig,om,Om,tf/ep^2,dt,uintsac(:,jj))
     end
     
-    nls_spec_mean = ep^2*fftshift(abs(mean(nls_sol.*conj(nls_sol),2))/KT^2);
-    dysthe_spec_mean = ep^2*fftshift(abs(mean(dysthe_sol.*conj(dysthe_sol),2))/KT^2);
-    mean_int = ep^2*fftshift(abs(mean(uints.*conj(uints),2))/KT^2);
-    mean_act = fftshift(abs(mean(act_sol.*conj(act_sol),2))/KT^2);
+    nls_spec_mean = (ep/KT)^2*fftshift(abs(mean(nls_sol.*conj(nls_sol),2)));
+    % dysthe_spec_mean = ep^2*fftshift(abs(mean(dysthe_sol.*conj(dysthe_sol),2))/KT^2);
+    mean_int = (ep/KT)^2*fftshift(abs(mean(uints.*conj(uints),2)));
+    mean_act = (ep/KT)^2*fftshift(abs(mean(act_sol.*conj(act_sol),2)));
     
-    plot(ep*kvec+k0,mean_int,'k-',ep*kvec+k0,nls_spec_mean,'k--',ep*kvec+k0,dysthe_spec_mean,'k-.',ep*kvec+k0,mean_act,'k:','LineWidth',2)
+    %plot(ep*kvec+k0,mean_int,'k-',ep*kvec+k0,nls_spec_mean,'k--',ep*kvec+k0,dysthe_spec_mean,'k-.',ep*kvec+k0,mean_act,'k:','LineWidth',2)
+    plot(ep*kvec+k0,mean_int,'k-',ep*kvec+k0,nls_spec_mean,'k--',ep*kvec+k0,mean_act,'k:','LineWidth',2)
     h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
     xlabel('$k$','Interpreter','LaTeX','FontSize',30)
     ylabel('$\left<\left|\hat{\eta}(k,t_{f})\right|^{2}\right>$','Interpreter','LaTeX','FontSize',30)
-    legend({'$Initial$','$NLS$','$Dysthe$','$Full$'},'Interpreter','LaTeX','FontSize',30)
+    %legend({'$Initial$','$NLS$','$Dysthe$','$Full$'},'Interpreter','LaTeX','FontSize',30)
+    legend({'$Initial$','$NLS$','$Full$'},'Interpreter','LaTeX','FontSize',30)
 end
 
