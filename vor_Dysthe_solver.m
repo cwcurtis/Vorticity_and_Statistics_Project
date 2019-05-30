@@ -11,10 +11,13 @@ function w = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uint)
     Dx = 1i*Kmesh;
     Dx2 = Dx.^2;
     s = sign(k0);
+    wto = om - 2*s*Om;
     %L0i = (1 + 2*1i*ep*s*cg/(om-2*s*Om)*Dx).^(-1);
-    L0i = (1 - 2*1i*ep*s*cg/(om-2*s*Om)*Dx);
+    %L0i = (1 - 2*1i*ep*s*cg/(om-2*s*Om)*Dx);
     %Lap = dt*L0i.*(1i*ad + ep*sig/(om-2*s*Om)*Dx).*Dx2;
-    Lap = dt*(L0i*1i*ad+ ep*sig/(om-2*s*Om)*Dx).*Dx2;
+    %Lap = dt*(L0i*1i*ad+ ep*sig/(om-2*s*Om)*Dx).*Dx2;
+    Lap = dt*(1i*ad + ep*(2*s*cg*ad+sig)/wto*Dx + ep^2*1i*(ad^2*s/wto - (2*s*cg*ad+sig)*2*s*cg/wto^2)*Dx2).*Dx2;
+    
     KT = 2*K;
     Kc = floor(KT/3);
     Kuc = KT - Kc + 1;

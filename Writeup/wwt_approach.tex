@@ -1,0 +1,111 @@
+ \documentclass[a4paper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{update}
+
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\bt}{\begin{tabular}}
+\newcommand{\et}{\end{tabular}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+
+\newcommand{\bp}{\begin{pmatrix}}
+\newcommand{\ep}{\end{pmatrix}}
+
+\newcommand{\pd}{\partial}
+\newcommand{\sech}{\mbox{sech}}
+
+\newcommand{\cf}{{\it cf.}~}
+
+\newcommand{\ltwo}{L_{2}(\mathbb{R}^{2})}
+\newcommand{\smooth}{C^{\infty}_{0}(\mathbb{R}^{2})}
+
+\newcommand{\br}{{\bf r}}
+\newcommand{\bk}{{\bf k}}
+\newcommand{\bv}{{\bf v}}
+
+\newcommand{\gnorm}[1]{\left|\left| #1\right|\right|}
+\newcommand{\ipro}[2]{\left<#1,#2 \right>}
+
+\begin{document}
+
+Letting the MNLS equation be given in the form
+\[
+\pd_{\tau}\eta - i\alpha_{d}\pd^{2}_{\xi}\eta -\epsilon\alpha_{d,m}\pd_{\xi}^{3}\eta- i\alpha_{nl}\left|\eta\right|^{2}\eta + \epsilon\left(c_{1}\left|\eta \right|^{2}\pd_{\xi}\eta + c_{2}\eta^{2}\pd_{\xi}\eta^{\ast} + ic_{3}\eta\mathcal{H}\pd_{\xi}\left|\eta\right|^{2}\right) = 0,
+\]
+letting 
+\[
+\eta(x,t) = \sum_{m}\hat{\eta}_{m}(t) e^{ik_{m}x}, ~ k_{m} = \frac{2\pi m}{L},
+\]
+we get that
+\[
+\frac{d}{dt}\hat{\eta}_{m} + i\omega_{m}\hat{\eta}_{m} + i\sum_{m_{1},m_{2},m_{3}}\left(-\alpha_{nl} + \epsilon\alpha_{c} \right)\hat{\eta}_{m_{1}}\hat{\eta}_{m_{2}}\hat{\eta}^{\ast}_{m_{3}}\delta^{m_{3}m}_{m_{1}m_{2}} = 0,
+\]
+where
+\[
+\omega_{m} = \alpha_{d}k_{m}^{2} + \epsilon\alpha_{d,m}k_{m}^{3},
+\]
+and
+\[
+\alpha_{c}\left(k_{m_{1}},k_{m_{2}},k_{m_{3}}\right) = c_{1}k_{m_{1}} - c_{2}k_{m_{3}} - c_{3}\left|k_{m_{2}}-k_{m_{3}}\right|.
+\]
+Moving to an ``interaction" picture via the transformation
+\[
+\tilde{\eta}_{m} = e^{i\omega_{m}t} \frac{\hat{\eta}_{m}}{\sqrt{\epsilon}},
+\]
+we then get the dynamical system
+\[
+\frac{d}{dt}\tilde{\eta}_{m} + i\epsilon \sum_{m_{1},m_{2},m_{3}}\left(-\alpha_{nl} + \epsilon\alpha_{c} \right)e^{if(m_{1},m_{2},m_{3},m)t}\tilde{\eta}_{m_{1}}\tilde{\eta}_{m_{2}}\tilde{\eta}^{\ast}_{m_{3}}\delta^{m_{3}m}_{m_{1}m_{2}} = 0,
+\]
+where
+\[
+f(m_{1},m_{2},m_{3},m) = \omega_{m} + \omega_{m_{3}} - \omega_{m_{1}} - \omega_{m_{2}}.
+\]
+
+Following in the usual approach, we then expand $\tilde{\eta}_{m}$ as 
+\[
+\tilde{\eta}_{m} = \tilde{\eta}^{(0)}_{m} + \epsilon \tilde{\eta}^{(1)}_{m} + \epsilon^{2}\tilde{\eta}^{(2)}_{m} + \cdots,
+\]
+so that we get to leading order in the fast time that $\tilde{\eta}^{0}_{m}$ is constant, $\tilde{\eta}^{1}_{m}(t)$ is 
+\[
+\tilde{\eta}^{(1)}_{m}(t) = i\alpha_{nl}\sum_{m_{1},m_{2},m_{3}}\Delta(f,t)\tilde{\eta}^{(0)}_{m_{1}}\tilde{\eta}^{(0)}_{m_{2}}\tilde{\eta}^{(0),\ast}_{m_{3}}\delta^{m_{3}m}_{m_{1}m_{2}},
+\]
+where
+\[
+\Delta(f,t) = \frac{e^{ift}-1}{if}.
+\]
+Lastly, we have that 
+\begin{align*}
+\tilde{\eta}^{(2)}_{m}(t) = & i\alpha_{nl}\sum_{m_{1},m_{2},m_{3}}\delta^{m_{3}m}_{m_{1}m_{2}}\tilde{\eta}^{(0)}_{m_{1}}\tilde{\eta}^{(0)}_{m_{2}}\int_{0}^{t}e^{if\tau} \tilde{\eta}^{(1),\ast}_{m_{3}}(\tau)d\tau  \\
+&+ i\alpha_{nl}\sum_{m_{1},m_{2},m_{3}}\delta^{m_{3}m}_{m_{1}m_{2}}\tilde{\eta}^{(0)}_{m_{2}}\tilde{\eta}^{(0),\ast}_{m_{3}}\int_{0}^{t}e^{if\tau} \tilde{\eta}^{(1)}_{m_{1}}(\tau)d\tau\\
+&+i\alpha_{nl}\sum_{m_{1},m_{2},m_{3}}\delta^{m_{3}m}_{m_{1}m_{2}}\tilde{\eta}^{(0)}_{m_{1}}\tilde{\eta}^{(0),\ast}_{m_{3}}\int_{0}^{t}e^{if\tau} \tilde{\eta}^{(1)}_{m_{2}}(\tau)d\tau\\
+&-i \sum_{m_{1},m_{2},m_{3}}\alpha_{c}\Delta(f,t)\tilde{\eta}^{(0)}_{m_{1}}\tilde{\eta}^{(0)}_{m_{2}}\tilde{\eta}^{(0),\ast}_{m_{3}}\delta^{m_{3}m}_{m_{1}m_{2}}
+\end{align*}
+
+Introducing the generating function
+\[
+\mathcal{L}_{m}(\lambda,t) = \left< e^{\lambda\left|\tilde{\eta}_{m}\right|^{2}} \right>,
+\]
+we get that 
+\begin{align*}
+\mathcal{L}_{m}(\lambda,t) = & \left<e^{\lambda\left|\tilde{\eta}_{m}^{(0)}\right|^{2}}\left(1 + 2\epsilon\lambda \mbox{Re}\left\{\tilde{\eta}^{(0)}_{m}\tilde{\eta}^{(1),\ast}_{m} \right\}\right.\right.\\
+& \left.\left. +\epsilon^{2}\left(2\lambda\mbox{Re}\left\{ \tilde{\eta}^{(0)}_{m}\tilde{\eta}^{(2),\ast}_{m} \right\} + \lambda \left|\tilde{\eta}^{(1)}_{m} \right|^{2} +2\lambda^{2} \mbox{Re}^{2}\left\{\tilde{\eta}^{(0)}_{m}\tilde{\eta}^{(1),\ast}_{m}\right\} \right)+\cdots\right)\right>
+\end{align*}
+\end{document}
