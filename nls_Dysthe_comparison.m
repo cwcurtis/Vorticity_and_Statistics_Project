@@ -63,24 +63,34 @@ function nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,Nens)
     %Since these work over such different time scales.  
     parfor jj=1:Nens
         nls_sol(:,jj) = nls_solver(K,Llx,nmax,ad,anl,dt,uints(:,jj));
-        % dysthe_sol(:,jj) = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));        
+        dysthe_sol(:,jj) = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));        
     end    
     parfor jj=1:Nens
        act_sol(:,jj) = afm_dno_solver(K,k0,ep,Llxf,sig,om,Om,tf/ep^2,dt,uintsac(:,jj)) 
     end
     toc
-    nls_spec_mean = (ep/KT)^2*fftshift(abs(mean(nls_sol.*conj(nls_sol),2)));
-    % dysthe_spec_mean = ep^2*fftshift(abs(mean(dysthe_sol.*conj(dysthe_sol),2))/KT^2);
-    mean_int = (ep/KT)^2*fftshift(abs(mean(uints.*conj(uints),2)));
-    mean_act = (ep/KT)^2*fftshift(abs(mean(act_sol.*conj(act_sol),2)));
     
-    %plot(ep*kvec+k0,mean_int,'k-',ep*kvec+k0,nls_spec_mean,'k--',ep*kvec+k0,dysthe_spec_mean,'k-.',ep*kvec+k0,mean_act,'k:','LineWidth',2)
-    plot(ep*kvec+k0,mean_int,'k-',ep*kvec+k0,nls_spec_mean,'k--',ep*kvec+k0,mean_act,'k:','LineWidth',2)
+    ekT = (ep/KT)^2;
+    nls_spec_mean = ekT*fftshift(abs(mean(nls_sol.*conj(nls_sol),2)));
+    dysthe_spec_mean = ekT*fftshift(abs(mean(dysthe_sol.*conj(dysthe_sol),2)));
+    mean_int = ekT*fftshift(abs(mean(uints.*conj(uints),2)));
+    mean_act = ekT*fftshift(abs(mean(act_sol.*conj(act_sol),2)));
+    
+    dk = ep*pi/Llx;
+    
+    nls_spec_mean = nls_spec_mean/(dk/2*(nls_spec_mean(1)+nls_spec_mean(end) + 2*sum(nls_spec_mean(2:end-1))));
+    dysthe_spec_mean = dysthe_spec_mean/(dk/2*(dysthe_spec_mean(1)+dysthe_spec_mean(end) + 2*sum(dysthe_spec_mean(2:end-1))));
+    mean_act = mean_act/(dk/2*(mean_act(1)+mean_act(end) + 2*sum(mean_act(2:end-1))));
+    mean_int = mean_int/(dk/2*(mean_int(1)+mean_int(end) + 2*sum(mean_int(2:end-1))));
+    
+    plot(ep*kvec+k0,mean_int,'k-',ep*kvec+k0,nls_spec_mean,'k--',ep*kvec+k0,dysthe_spec_mean,'k-.',ep*kvec+k0,mean_act,'k:','LineWidth',2)
+    %plot(ep*kvec+k0,mean_int,'k-',ep*kvec+k0,nls_spec_mean,'k--',ep*kvec+k0,mean_act,'k:','LineWidth',2)
+    %plot(ep*kvec+k0,mean_int,'k-',ep*kvec+k0,nls_spec_mean,'k--',ep*kvec+k0,dysthe_spec_mean,'k-.','LineWidth',2)
     h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
     xlabel('$k$','Interpreter','LaTeX','FontSize',30)
     ylabel('$\left<\left|\hat{\eta}(k,t_{f})\right|^{2}\right>$','Interpreter','LaTeX','FontSize',30)
-    %legend({'$Initial$','$NLS$','$Dysthe$','$Full$'},'Interpreter','LaTeX','FontSize',30)
-    legend({'$Initial$','$NLS$','$Full$'},'Interpreter','LaTeX','FontSize',30)
+    legend({'$Initial$','$NLS$','$Dysthe$','$Full$'},'Interpreter','LaTeX','FontSize',30)
+    %legend({'$Initial$','$NLS$','$Dysthe$'},'Interpreter','LaTeX','FontSize',30)
 end
 
