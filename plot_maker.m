@@ -5,7 +5,7 @@ K = 256;
 ep = .05;
 tf = 1;
 dt = 5e-3;
-om = 1.12;
+om = 0;
 sig = 1e-5;
 Nens = 512;
 k0 = 1;
@@ -13,7 +13,7 @@ k0 = 1;
 mwid = sqrt(2*anl/ad);
 disp('Minimal Stable Envelope Width')
 disp(mwid)
-    
+
 nowdths = 4;
 widths = linspace(.5*mwid,1.5*mwid,nowdths);
 nls_avgs = zeros(nowdths,1);
@@ -22,7 +22,6 @@ act_avgs = zeros(nowdths,1);
 stds_act = zeros(nowdths,1);
 int_avgs = zeros(nowdths,1);
 stds_int = zeros(nowdths,1);
-
 for jj=1:nowdths
     [nls_avg,std_nls,act_avg,std_act,int_avg,std_int] = nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,widths(jj),k0,Nens);
     nls_avgs(jj) = nls_avg;
@@ -32,6 +31,10 @@ for jj=1:nowdths
     int_avgs(jj) = int_avg;
     stds_int(jj) = std_int;
 end
+
+%widths = 1.05*mwid;
+%disp(widths)
+%[nls_avg,std_nls,act_avg,std_act,int_avg,std_int] = nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,widths,k0,Nens);
 
 figure(1)
 %tstr = sprintf('$\omega=$%f, $\epsilon=$%f', om, ep);

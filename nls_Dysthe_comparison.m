@@ -43,7 +43,7 @@ function [nls_avg,std_nls,dys_avg,std_dys,int_avg,std_int] = nls_Dysthe_comparis
     rvec = exp(-(Kmesh).^2/(2*width^2));
     rvecac = exp(-(Kmeshf-k0).^2/(2*width^2*ep^2));
     kvec = pi/Llx*(-K+1:K)';
-    deadinds = abs(Kmesh) > 2*k0;
+    deadinds = abs(Kmesh) > 16*k0;
     %deadindsac = logical(1 - (Kmeshf>(k0-2*k0*ep)).*(Kmeshf<(k0+2*k0*ep)));
     for jj=1:Nens
         arand = exp(2*pi*1i*rand(KT,1));
@@ -98,14 +98,16 @@ function [nls_avg,std_nls,dys_avg,std_dys,int_avg,std_int] = nls_Dysthe_comparis
     %std_act = dk/2*(stact(1)+stact(end)+2*sum(stact(2:end-1)));
     disp([nls_avg; dys_avg; int_avg])
     disp([std_nls; std_dys; std_int])
-    
-    %plot(rkvec,mean_int_plot,'k-',rkvec,nls_spec_plot,'k--',rkvec,dysthe_spec_plot,'k-.','LineWidth',2)
+    %{
+    figure(2)
+    plot(rkvec,mean_int_plot,'k-',rkvec,nls_spec_plot,'k--',rkvec,dysthe_spec_plot,'k-.','LineWidth',2)
     %plot(rkvec,mean_int_plot,'k-',rkvec,nls_spec_plot,'k--',rkvec,dysthe_spec_plot,'k-.',rkvec,mean_act_plot,'k:','LineWidth',2)
-    %h = set(gca,'FontSize',30);
-    %set(h,'Interpreter','LaTeX')
-    %xlabel('$k$','Interpreter','LaTeX','FontSize',30)
-    %ylabel('$\left<\left|\hat{\eta}(k,t_{f})\right|^{2}\right>$','Interpreter','LaTeX','FontSize',30)
-    %legend({'$Initial$','$NLS$','$Dysthe$'},'Interpreter','LaTeX','FontSize',30)
+    h = set(gca,'FontSize',30);
+    set(h,'Interpreter','LaTeX')
+    xlabel('$k$','Interpreter','LaTeX','FontSize',30)
+    ylabel('$\left<\left|\hat{\eta}(k,t_{f})\right|^{2}\right>$','Interpreter','LaTeX','FontSize',30)
+    legend({'$Initial$','$NLS$','$Dysthe$'},'Interpreter','LaTeX','FontSize',30)
     %legend({'$Initial$','$NLS$','$Dysthe$','$Full$'},'Interpreter','LaTeX','FontSize',30)    
+    %}
 end
 
