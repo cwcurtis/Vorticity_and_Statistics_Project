@@ -34,7 +34,7 @@ I.E. Alber.
 C.W. Curtis, J.C. Carter, and H.~Kalisch.
 \newblock Particle paths in nonlinear {S}chr\"{o}dinger models in the presence
   of linear shear currents.
-\newblock {\em J. Fluid Mech.}, to appear.
+\newblock {\em J. Fluid Mech.}, to appear, 2018.
 
 \bibitem{ashton}
 A.C.L. Ashton and A.S. Fokas.
@@ -45,5 +45,11 @@ A.C.L. Ashton and A.S. Fokas.
 M.J. Ablowitz, A.S. Fokas, and Z.H. Musslimani.
 \newblock On a new non-local formulation of water waves.
 \newblock {\em J. Fluid Mech.}, 562:313--343, 2006.
+
+\bibitem{dysthe1}
+K.B. Dysthe.
+\newblock Note on a modification to the nonlinear {S}chr\"{o}dinger equation
+  for application to deep water waves.
+\newblock {\em Proc. Roc. Soc. A}, 369:105--114, 1979.
 
 \end{thebibliography}
