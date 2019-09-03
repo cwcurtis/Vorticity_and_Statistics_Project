@@ -2,10 +2,9 @@ function plot_maker
 
 Llx = 50*pi;
 K = 256;
-ep = .05;
-tf = 1;
+ep = .1;
 dt = 5e-3;
-om = 0;
+om = -1;
 sig = 1e-5;
 Nens = 512;
 k0 = 1;
@@ -13,6 +12,7 @@ k0 = 1;
 mwid = sqrt(2*anl/ad);
 disp('Minimal Stable Envelope Width')
 disp(mwid)
+tf = mwid;
 
 nowdths = 4;
 widths = linspace(.5*mwid,1.5*mwid,nowdths);

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.8)  22 JUL 2019 08:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.8)  3 SEP 2019 12:41
 entering extended mode
 **D:/My*Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/ra
 ndom_vorticity.tex
@@ -241,8 +241,8 @@ Package pdftex.def Info: pdf_w_n1_ep_pt1_Nens_512-eps-converted-to.pdf used on
 input line 213.
 (pdftex.def)             Requested size: 233.9978pt x 102.85759pt.
 Package epstopdf Info: Source file: <omega_n1_mean_std_plot_ep_pt1.eps>
-(epstopdf)                    date: 2019-07-22 08:07:11
-(epstopdf)                    size: 64628 bytes
+(epstopdf)                    date: 2019-09-03 12:41:27
+(epstopdf)                    size: 65070 bytes
 (epstopdf)             Output file: <omega_n1_mean_std_plot_ep_pt1-eps-converte
 d-to.pdf>
 (epstopdf)                    date: 2019-07-22 08:07:37
@@ -250,15 +250,22 @@ d-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=omega_n1_mean_std_plot_ep_p
 t1-eps-converted-to.pdf omega_n1_mean_std_plot_ep_pt1.eps>
 (epstopdf)             \includegraphics on input line 215.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=omega_n1_mean_std_plot_ep_pt1-eps-converted-to.pdf
+ omega_n1_mean_std_plot_ep_pt1.eps)...executed (allowed).
 
-<omega_n1_mean_std_plot_ep_pt1-eps-converted-to.pdf, id=32, 963.6pt x 457.71pt>
+Package epstopdf Info: Result file: <omega_n1_mean_std_plot_ep_pt1-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2019-09-03 12:41:59
+(epstopdf)                    size: 26293 bytes.
+
+<omega_n1_mean_std_plot_ep_pt1-eps-converted-to.pdf, id=32, 963.6pt x 423.5825p
+t>
 File: omega_n1_mean_std_plot_ep_pt1-eps-converted-to.pdf Graphic file (type pdf
 )
-<use omega_n1_mean_std_plot_ep_pt1-eps-converted-to.pdf>
+ <use omega_n1_mean_std_plot_ep_pt1-eps-converted-to.pdf>
 Package pdftex.def Info: omega_n1_mean_std_plot_ep_pt1-eps-converted-to.pdf use
 d on input line 215.
-(pdftex.def)             Requested size: 233.9978pt x 111.1447pt.
+(pdftex.def)             Requested size: 233.9978pt x 102.85759pt.
 Package epstopdf Info: Source file: <pdf_w_n1_ep_pt05_Nens_512.eps>
 (epstopdf)                    date: 2019-07-22 08:07:11
 (epstopdf)                    size: 60099 bytes
@@ -279,8 +286,8 @@ Package pdftex.def Info: pdf_w_n1_ep_pt05_Nens_512-eps-converted-to.pdf used on
  input line 217.
 (pdftex.def)             Requested size: 233.9978pt x 102.85759pt.
 Package epstopdf Info: Source file: <omega_n1_mean_std_plot_ep_pt05.eps>
-(epstopdf)                    date: 2019-07-22 08:07:11
-(epstopdf)                    size: 64380 bytes
+(epstopdf)                    date: 2019-09-03 12:41:27
+(epstopdf)                    size: 64767 bytes
 (epstopdf)             Output file: <omega_n1_mean_std_plot_ep_pt05-eps-convert
 ed-to.pdf>
 (epstopdf)                    date: 2019-07-22 08:07:38
@@ -288,16 +295,22 @@ ed-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=omega_n1_mean_std_plot_ep_p
 t05-eps-converted-to.pdf omega_n1_mean_std_plot_ep_pt05.eps>
 (epstopdf)             \includegraphics on input line 219.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=omega_n1_mean_std_plot_ep_pt05-eps-converted-to.pd
+f omega_n1_mean_std_plot_ep_pt05.eps)...executed (allowed).
 
-<omega_n1_mean_std_plot_ep_pt05-eps-converted-to.pdf, id=34, 963.6pt x 457.71pt
->
+Package epstopdf Info: Result file: <omega_n1_mean_std_plot_ep_pt05-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2019-09-03 12:41:59
+(epstopdf)                    size: 26012 bytes.
+
+<omega_n1_mean_std_plot_ep_pt05-eps-converted-to.pdf, id=34, 963.6pt x 423.5825
+pt>
 File: omega_n1_mean_std_plot_ep_pt05-eps-converted-to.pdf Graphic file (type pd
 f)
  <use omega_n1_mean_std_plot_ep_pt05-eps-converted-to.pdf>
 Package pdftex.def Info: omega_n1_mean_std_plot_ep_pt05-eps-converted-to.pdf us
 ed on input line 219.
-(pdftex.def)             Requested size: 233.9978pt x 111.1447pt.
+(pdftex.def)             Requested size: 233.9978pt x 102.85759pt.
 
 
 LaTeX Warning: Reference `fig:meansdomn1' on page 6 undefined on input line 226
@@ -306,10 +319,6 @@ LaTeX Warning: Reference `fig:meansdomn1' on page 6 undefined on input line 226
 [6]
 
 LaTeX Warning: Text page 7 contains only floats.
-
-
-Overfull \vbox (5.66609pt too high) has occurred while \output is active []
-
 
 [7 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/
 pdf_w_n1_ep_pt1_Nens_512-eps-converted-to.pdf> <D:/My Documents/Desktop/Vortici
@@ -529,7 +538,7 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/symbols/msbm10.pfb>
-Output written on random_vorticity.pdf (11 pages, 488534 bytes).
+Output written on random_vorticity.pdf (11 pages, 488371 bytes).
 PDF statistics:
  150 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
