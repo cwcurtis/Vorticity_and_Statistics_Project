@@ -1,0 +1,119 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2013.12.16)  20 SEP 2019 08:28
+entering extended mode
+**D:/My*Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/de
+ep_water_shear_Feb2.bib
+
+("D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/de
+ep_water_shear_Feb2.bib"
+Overfull \hbox (11.63474pt too wide) in paragraph at lines 13--21
+[]\tenrm @articlealber, AU-THOR=I.E. Al-ber, TI-TLE=The ef-fects of ran-dom-nes
+s on the sta-bil-ity of two-dimensional|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (0.3013pt too wide) in paragraph at lines 22--30
+[]\tenrm @articlecurtis, AU-THOR=C.W. Cur-tis and S.S.P. Shen, TITLE=Three-dime
+nsional sur-face wa-ter waves|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (10.1581pt too wide) in paragraph at lines 22--30
+\tenrm gov-erned by the forced Benney--Luke equa-tion, JOUR-NAL=Stud. Appl. Mat
+h., VOL-UME=135, PAGES=447--|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm g
+.\tenrm o
+.\kern-0.27779
+.\discretionary replacing 2
+..\tenrm v
+..\tenrm -
+.\tenrm v
+.etc.
+
+
+Overfull \hbox (3.32915pt too wide) in paragraph at lines 31--39
+[]\tenrm @articlecurtis2, AU-THOR=C.W. Cur-tis and B. De-con-inck, TI-TLE=On th
+e con-ver-gence of Hill's method,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (7.80138pt too wide) in paragraph at lines 72--80
+[]\tenrm @articlecurtis7, AU-THOR=M.J. Ablowitz and C.W. Cur-tis, TI-TLE=Conser
+vation laws and web-solutions|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (1.31538pt too wide) in paragraph at lines 89--97
+\tenrm equa-tion for ap-pli-ca-tion to deep wa-ter waves, JOUR-NAL=Proc. Roc. S
+oc. A, VOL-UME=369, PAGES=105--|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm e
+.\tenrm q
+.\tenrm u
+.\tenrm a
+.\discretionary
+..\tenrm -
+.etc.
+
+
+Overfull \hbox (7.28767pt too wide) in paragraph at lines 117--125
+\tenrm local for-mu-la-tion of wa-ter waves, JOUR-NAL=J. Fluid Mech., VOL-UME=5
+62, PAGES=313--343, YEAR=2006|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm l
+.\tenrm o
+.\kern0.27779
+.\tenrm c
+.\tenrm a
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--125
+
+
+\hbox(0.0+0.0)x469.75499
+.\glue(\rightskip) 0.0
+
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
+*
+! Emergency stop.
+<*> ...Git_Clone/Writeup/deep_water_shear_Feb2.bib
+                                                  
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

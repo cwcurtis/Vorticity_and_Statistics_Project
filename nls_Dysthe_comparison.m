@@ -1,4 +1,4 @@
-function [nls_avg,std_nls,dys_avg,std_dys,int_avg,std_int] = nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,k0,Nens)
+function [nls_avg,nls_std,nls_kts,nls_bfi,dysthe_avg,dysthe_std,dysthe_kts,dysthe_bfi,int_avg,int_std,int_kts] = nls_Dysthe_comparison(Llx,K,ep,tf,dt,om,sig,width,k0,Nens)
     
     % [-Llx,Llx] is size of simulation
     % K is number of modes in simulation
@@ -9,105 +9,109 @@ function [nls_avg,std_nls,dys_avg,std_dys,int_avg,std_int] = nls_Dysthe_comparis
     % om is magnitude of vorticity 
     % sig is surface tension
     % Nens is number of ensemble members
-    Llxf = Llx;
-    Llx = ep*Llx;
-    
-    %disp('Spatial mesh size is')
-    %disp(Llx/K)
     
     nmax = round(tf/dt); % Step size for time integrator and number of time steps
-    
-    %disp('Carrier wave number is')
-    %disp(k0)
-    
     [Om,cg,ad,anl] = param_maker(k0,om,sig);    
     
     KT = 2*K;
+    dk = pi/Llx;
     
     Kc = floor(KT/3);
     Kuc = KT - Kc + 1;
     Kc = Kc + 1;    
     
     Kvec = [ 0:K -K+1:-1 ]';
-    Kmesh = pi/Llx*Kvec;
-    Kmeshf = pi/Llxf*Kvec;
-        
-    %Xmesh = -Llx:Llx/K:Llx-Llx/K;
-    
-    uints = zeros(KT,Nens);
-    uintsac = zeros(KT,Nens);
-    nls_sol = zeros(KT,Nens);
-    dysthe_sol = zeros(KT,Nens);
-    %act_sol = zeros(KT,Nens);
+    Kmesh = dk*Kvec;
     
     rvec = exp(-(Kmesh).^2/(2*width^2));
-    rvecac = exp(-(Kmeshf-k0).^2/(2*width^2*ep^2));
-    kvec = pi/Llx*(-K+1:K)';
-    deadinds = abs(Kmesh) > 8*k0;
-    %deadindsac = logical(1 - (Kmeshf>(k0-2*k0*ep)).*(Kmeshf<(k0+2*k0*ep)));
-    for jj=1:Nens
-        arand = exp(2*pi*1i*rand(KT,1));
-        uints(:,jj) = KT*sqrt(sqrt(pi)/(Llx*width))*rvec.*arand;   
-        uintsac(:,jj) = KT*sqrt(sqrt(pi)/(Llxf*width*ep))*rvecac.*arand;   
-        %uints(Kc:Kuc,jj) = 0;
-        uints(deadinds,jj) = 0;
-        %uintsac(deadindsac,jj) = 0;
-    end   
+    kvec = dk*fftshift(Kvec);
+    arand = exp(2*pi*1i*rand(KT,Nens));
+    uints = KT*sqrt(sqrt(pi)/(Llx*width))*repmat(rvec,1,Nens).*arand;   
+    uints(Kc:Kuc,:) = 0;
     
     %aval = sqrt(sqrt(pi)/(Llx*width)*sum(rvec.^2));
     %disp('Root mean square NLS amplitude')
     %disp(aval)
-    %Since these work over such different time scales.  
-    parfor jj=1:Nens
-        nls_sol(:,jj) = nls_solver(K,Llx,nmax,ad,anl,dt,uints(:,jj));
-        dysthe_sol(:,jj) = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,uints(:,jj));        
-    end    
-    %parfor jj=1:Nens
-    %   act_sol(:,jj) = afm_dno_solver(K,k0,ep,Llxf,sig,om,Om,tf/ep^2,dt,uintsac(:,jj)) 
-    %end
-    ekT = (ep/KT)^2;
-    nls_spec_plot = ekT*fftshift(abs(mean(nls_sol.*conj(nls_sol),2)));
-    dysthe_spec_plot = ekT*fftshift(abs(mean(dysthe_sol.*conj(dysthe_sol),2)));
-    mean_int_plot = ekT*fftshift(abs(mean(uints.*conj(uints),2)));
-    %mean_act_plot = ekT*fftshift(abs(mean(act_sol.*conj(act_sol),2)));
     
-    dk = ep*pi/Llx;
-    rkvec = ep*kvec+k0;
-    nls_spec_mean = nls_spec_plot/(dk/2*(nls_spec_plot(1)+nls_spec_plot(end)+2*sum(nls_spec_plot(2:end-1))));
-    dysthe_spec_mean = dysthe_spec_plot/(dk/2*(dysthe_spec_plot(1)+dysthe_spec_plot(end)+2*sum(dysthe_spec_plot(2:end-1))));
-    mean_int = mean_int_plot/(dk/2*(mean_int_plot(1)+mean_int_plot(end)+2*sum(mean_int_plot(2:end-1))));
-    %mean_act = mean_act_plot/(dk/2*(mean_act_plot(1)+mean_act_plot(end)+2*sum(mean_act_plot(2:end-1))));
+    samp_times = linspace(0,tf,20);
+    samp_inds = floor(samp_times/dt);
     
-    knls = rkvec.*nls_spec_mean;
-    kdys = rkvec.*dysthe_spec_mean;
-    kint = rkvec.*mean_int;    
-    %kact = rkvec.*mean_act;
+    tmat_nls = zeros(KT,Nens,length(samp_inds));
+    tmat_dysthe = zeros(KT,Nens,length(samp_inds));
     
-    nls_avg = dk/2*(knls(1)+knls(end)+2*sum(knls(2:end-1)));
-    dys_avg = dk/2*(kdys(1)+kdys(end)+2*sum(kdys(2:end-1)));
-    int_avg = dk/2*(kint(1)+kint(end)+2*sum(kint(2:end-1)));
-    %act_avg = dk/2*(kact(1)+kact(end)+2*sum(kact(2:end-1)));
+    parfor jj=1:Nens        
+        tmat_nls(:,jj,:) = nls_solver(K,Llx,nmax,ad,anl,dt,samp_inds,uints(:,jj));
+        tmat_dysthe(:,jj,:) = vor_Dysthe_solver(K,Llx,nmax,ad,anl,cg,k0,Om,om,sig,ep,dt,samp_inds,uints(:,jj));                        
+    end
     
-    stnls = (rkvec-nls_avg).^2.*nls_spec_mean;
-    stdys = (rkvec-dys_avg).^2.*dysthe_spec_mean;
-    stint = (rkvec-int_avg).^2.*mean_int;
-    %stact = (rkvec-act_avg).^2.*mean_act;
-    std_nls = dk/2*(stnls(1)+stnls(end)+2*sum(stnls(2:end-1)));
-    std_dys = dk/2*(stdys(1)+stdys(end)+2*sum(stdys(2:end-1)));
-    std_int = dk/2*(stint(1)+stint(end)+2*sum(stint(2:end-1)));
-    %std_act = dk/2*(stact(1)+stact(end)+2*sum(stact(2:end-1)));
-    disp([nls_avg; dys_avg; int_avg])
-    disp([std_nls; std_dys; std_int])
-    %{
-    figure(2)
-    plot(rkvec,mean_int_plot,'k-',rkvec,nls_spec_plot,'k--',rkvec,dysthe_spec_plot,'k-.','LineWidth',2)
-    %plot(rkvec,mean_int_plot,'k-',rkvec,nls_spec_plot,'k--',rkvec,dysthe_spec_plot,'k-.',rkvec,mean_act_plot,'k:','LineWidth',2)
+    [nls_avg_plot,nls_std_plot,nls_skw_plot,nls_kts_plot,nls_rms_plot] = spec_comp_time(tmat_nls,kvec,dk);
+    [dysthe_avg_plot,dysthe_std_plot,dysthe_skw_plot,dysthe_kts_plot,dysthe_rms_plot] = spec_comp_time(tmat_dysthe,kvec,dk);
+    [int_avg,int_std,int_kts] = spec_comp(uints,kvec,dk);
+    
+    nls_avg = nls_avg_plot(end);
+    nls_std = nls_std_plot(end);
+    nls_kts = nls_kts_plot(end);
+    nls_rms = nls_rms_plot(end);
+    
+    dysthe_avg = dysthe_avg_plot(end);
+    dysthe_std = dysthe_std_plot(end);
+    dysthe_kts = dysthe_kts_plot(end);
+    dysthe_rms = dysthe_rms_plot(end);
+    
+    nls_bfi_plot = abs(sqrt(anl/(2*ad)))*nls_rms_plot./nls_std_plot;
+    dysthe_bfi_plot = abs(sqrt(anl/(2*ad)))*dysthe_rms_plot./dysthe_std_plot;
+    
+    nls_bfi = nls_bfi_plot(end);
+    dysthe_bfi = dysthe_bfi_plot(end);
+    
+    %disp([nls_avg; dysthe_avg; int_avg])
+    %disp([nls_std; dysthe_std; int_std])
+        
+    pdist_nls = pdist_maker(squeeze(tmat_nls(:,:,end)),dk);
+    pdist_dysthe = pdist_maker(squeeze(tmat_dysthe(:,:,end)),dk);
+    pdist_int = pdist_maker(uints,dk);
+    
+    figure(1)
+    plot(kvec,pdist_int,'k:',kvec,pdist_nls,'k--',kvec,pdist_dysthe,'k-','LineWidth',2)
     h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
     xlabel('$k$','Interpreter','LaTeX','FontSize',30)
-    ylabel('$\left<\left|\hat{\eta}(k,t_{f})\right|^{2}\right>$','Interpreter','LaTeX','FontSize',30)
-    legend({'$Initial$','$NLS$','$Dysthe$'},'Interpreter','LaTeX','FontSize',30)
-    %legend({'$Initial$','$NLS$','$Dysthe$','$Full$'},'Interpreter','LaTeX','FontSize',30)    
-    %}
+    ylabel('$S(k,\tau_{f},\sigma)$','Interpreter','LaTeX','FontSize',30)
+    %legend({'Initial','NLS','Dysthe'},'Interpreter','LaTeX','FontSize',30)
+    
+    figure(2)
+    plot(samp_times,nls_avg_plot,'k--',samp_times,dysthe_avg_plot,'k-','LineWidth',2)
+    set(h,'Interpreter','LaTeX')
+    xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
+    ylabel('$m(\tau)$','Interpreter','LaTeX','FontSize',30)
+    %legend({'NLS','Dysthe'},'Interpreter','LaTeX','FontSize',30)
+        
+    figure(3)
+    plot(samp_times,nls_std_plot,'k--',samp_times,dysthe_std_plot,'k-','LineWidth',2)
+    set(h,'Interpreter','LaTeX')
+    xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
+    ylabel('$\tilde{\sigma}(\tau)$','Interpreter','LaTeX','FontSize',30)
+    %legend({'NLS','Dysthe'},'Interpreter','LaTeX','FontSize',30)
+    
+    figure(4)
+    plot(samp_times,nls_skw_plot,'k--',samp_times,dysthe_skw_plot,'k-','LineWidth',2)
+    set(h,'Interpreter','LaTeX')
+    xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
+    ylabel('$\tilde{s}(\tau)$','Interpreter','LaTeX','FontSize',30)
+        
+    figure(5)
+    plot(samp_times,nls_kts_plot,'k--',samp_times,dysthe_kts_plot,'k-','LineWidth',2)
+    set(h,'Interpreter','LaTeX')
+    xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
+    ylabel('$\tilde{k}(\tau)$','Interpreter','LaTeX','FontSize',30)
+    %legend({'NLS','Dysthe'},'Interpreter','LaTeX','FontSize',30)
+    
+    figure(6)
+    plot(samp_times,nls_bfi_plot,'k--',samp_times,dysthe_bfi_plot,'k-','LineWidth',2)
+    set(h,'Interpreter','LaTeX')
+    xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
+    ylabel('$BFI(\tau)$','Interpreter','LaTeX','FontSize',30)
+    %legend({'NLS','Dysthe'},'Interpreter','LaTeX','FontSize',30)
+    
 end
 
