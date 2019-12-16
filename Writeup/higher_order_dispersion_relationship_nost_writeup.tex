@@ -1,0 +1,210 @@
+ \documentclass[a4paper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{update}
+
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\bt}{\begin{tabular}}
+\newcommand{\et}{\end{tabular}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+
+\newcommand{\bp}{\begin{pmatrix}}
+\newcommand{\ep}{\end{pmatrix}}
+
+\newcommand{\pd}{\partial}
+\newcommand{\sech}{\mbox{sech}}
+
+\newcommand{\cf}{{\it cf.}~}
+
+\newcommand{\ltwo}{L_{2}(\mathbb{R}^{2})}
+\newcommand{\smooth}{C^{\infty}_{0}(\mathbb{R}^{2})}
+
+\newcommand{\br}{{\bf r}}
+\newcommand{\bk}{{\bf k}}
+\newcommand{\bv}{{\bf v}}
+
+\newcommand{\gnorm}[1]{\left|\left| #1\right|\right|}
+\newcommand{\ipro}[2]{\left<#1,#2 \right>}
+
+\begin{document}
+\section*{Appendix}
+\subsection*{Shear Profiles over Infinitely Deep Fluids}
+As noted in the text, the assumption that the fluid velocity is to leading order given by 
+\[
+{\bf u} \approx \omega z \hat{{\bf i}}
+\]
+is clearly unrealistic insofar as it leads to currents of infinite speed as one descends through the fluid.  A more realistic, though also more complicated, ansatz is to suppose that to leading order we have that ${\bf u}\approx u(z)\hat{{\bf i}}$ where  
+\[
+u(z) = \left\{\ba{rl} \omega z, & -h_{0} \leq z < 0 \\
+\frac{-\omega h_{0}}{h_{1}-h_{0}} (z+h_{1}), & -h_{1} \leq z < -h_{0} \\
+0, & z < -h_{1}
+\ea \right.
+\] 
+where $h_{1}>h_{0}\gg 1$, so that we are looking at a deep, continuous shear profile which is zero at or near the surface $z=\epsilon \eta(x,t)$ and at the depth $z=-h_{1}$, after which the fluid is to leading order quiescent.  Note, we can also see this profile as satisfying to leading order two `no-slip' conditions, one near the free surface at $z=0$ and one near $z=-h_{1}$.
+
+While a full, nonlinear description of the above shear profile would require two more freely evolving interfaces, and thus is beyond the scope of this paper, we can readily find the dispersion relationship affiliated with this profile.  This then allows us to provide some analytic argument for why we study an otherwise unphysical velocity profile in the main body of the text.  Likewise, information from the dispersion relationship provides us with a better understanding of how depth varying shear profiles induce both surface and internal waves.
+
+Following relatively classical approaches, we introduce three fluid velocities
+\begin{align*}
+{\bf u}_{1} = \omega z \hat{{\bf i}} + \epsilon \nabla \phi_{1}, &  ~-h_{0}+\epsilon \eta_{2} < z < \epsilon \eta_{1}\\
+{\bf u}_{2} = \frac{-\omega h_{0}}{h_{1}-h_{0}} (z+h_{1}) \hat{{\bf i}} + \epsilon \nabla \phi_{2}, & ~-h_{1}+\epsilon \eta_{3} < z < -h_{0}+\epsilon \eta_{2}\\
+{\bf u}_{3} = \epsilon \nabla \phi_{3}, & ~z < -h_{1} + \epsilon \eta_{3}
+\end{align*}    
+so that after linearizing around the small disturbances, we have the following system of evolution equations describing the behavior of small disturbances
+\[
+\pd_{t}\phi_{1} + g\eta_{1} + \omega \pd_{t}\pd_{x}^{-1}\eta_{1} = 0, ~ z = 0 
+\]
+\[
+\pd_{t}\eta_{1} = \pd_{z}\phi_{1}, ~ z = 0, 
+\]
+\[
+\pd_{t}\phi_{2} - \frac{\omega h_{1}}{h_{1}-h_{0}} \pd_{t}\pd_{x}^{-1}\eta_{2} = \pd_{t}\phi_{1} , ~ z = -h_{0} 
+\]
+\begin{align*}
+\pd_{t}\eta_{2} = \pd_{z}\phi_{2}, & ~ z = -h_{0},\\
+\pd_{t}\eta_{2} = \pd_{z}\phi_{1}, & ~ z = -h_{0}, 
+\end{align*}
+and
+\[
+\pd_{t}\phi_{3} = \pd_{t}\phi_{2} - \frac{\omega h_{0}}{h_{1}-h_{0}} \pd_{t}\pd_{x}^{-1}\eta_{3}, ~ z = -h_{1} 
+\]
+\begin{align*}
+\pd_{t}\eta_{3} = \pd_{z}\phi_{3}, & ~ z = -h_{1},\\
+\pd_{t}\eta_{3} = \pd_{z}\phi_{2}, & ~ z = -h_{1}. 
+\end{align*}
+Taking each function $\phi_{j}$ to be harmonic and letting $\pd_{z}\phi_{3}\rightarrow 0 $ as $z\rightarrow -\infty$ gives us the following solutions for each of the scalar velocity potentials
+\[
+\phi_{1}(x,z,t) = \left(\alpha_{11}\cosh(kz)+\alpha_{12}\sinh(kz)\right)e^{i\theta(x,t)} + \mbox{cc}
+\]
+\[
+\phi_{2}(x,z,t) = \left(\alpha_{21}\cosh(k(z+h_{0}))+\alpha_{22}\sinh(k(z+h_{0}))\right)e^{i\theta(x,t)} + \mbox{cc}
+\]
+and
+\[
+\phi_{3}(x,z,t) = \alpha_{3}e^{|k|(z+h_{1})}e^{i\theta(x,t)} + \mbox{cc}
+\]
+where $\theta(x,t) = kx + \Omega(k,\omega)t$, and `cc' denotes the complex conjugate.  
+
+This then gives us the linear system of equations 
+\begin{align*}
+\Omega \alpha_{11} = & \left(\frac{gk}{\Omega} + \omega \right)\alpha_{12} \\
+\Omega\left(\alpha_{11}\cosh(kh_{0}) -\alpha_{12}\sinh(kh_{0}) \right) = &  \Omega \alpha_{21} + \frac{\omega h_{1}}{\delta h}\alpha_{22}\\
+\Omega\left(\alpha_{21}\cosh(k\delta h) - \alpha_{22}\sinh(k \delta h) \right) = & \left(\Omega - \frac{\omega h_{0} s}{\delta h} \right)\alpha_{3}\\
+\alpha_{22} = & -\alpha_{11}\sinh(kh_{0}) + \alpha_{12}\cosh(kh_{0})  \\
+\alpha_{3} = & s_{k}\left(-\alpha_{21}\sinh(k\delta h) + \alpha_{22}\cosh(k\delta h)\right)
+\end{align*}
+where $\delta h = h_{1}-h_{0}$ and $s=\mbox{sgn}(k)$.  From this we derive the dispersion relationship 
+\[
+\frac{gk}{\Omega} + \omega -\Omega \tanh(kh_{0}) + \left(\frac{1}{\Omega}\left(\frac{gk}{\Omega} + \omega\right)\tanh(kh_{0}) - 1\right)\left(\frac{\omega h_{1}}{\delta h} + \Omega \Omega_{1}(k\delta h)\right) = 0
+\]
+where
+\[
+\Omega_{1}(k\delta h) = \frac{s\left(\Omega -\frac{\omega h_{0}}{\delta h}s\right)+\Omega \tanh(k\delta h)}{\Omega +s\left(\Omega - \frac{\omega h_{0}}{\delta h}s\right)\tanh(k\delta h)}.
+\]
+While in general we would have to find the roots of a fifth-order polynomial to determine the values of $\Omega$, we see for $h_{1}\gg h_{0}$ that $\Omega_{1}\sim s$, and thus we get that the dispersion relationship simplifies to 
+\[
+\frac{gk}{\Omega} + \omega -\Omega \tanh(kh_{0}) + \left(\frac{1}{\Omega}\left(\frac{gk}{\Omega} + \omega\right)\tanh(kh_{0}) - 1\right)\left(\tilde{\omega} + s\Omega \right) \sim 0,
+\]
+where 
+\[
+\tilde{\omega} = \frac{\omega h_{1}}{\delta h}.
+\]
+Since $\tilde{\omega}$ only approaches $\omega$ at an algebraic rate, it seems appropriate to keep it included in the analysis.  Letting 
+\[
+\left|\tanh(kh_{0}) \right| = 1 - \tilde{\epsilon}, 
+\]
+and noting that $\tilde{\epsilon}$ vanishes to zero exponentially fast as we increase $h_{0}$, we see the reduced dispersion relationship factors into the form
+\[
+\left(2\Omega + s\tilde{\omega} \right)\left(g\left|k\right| + s\omega \Omega - \Omega^{2} \right) + \tilde{\epsilon}\left(\Omega^{3} - (s\tilde{\omega} + \Omega)(g|k|+\omega s\Omega) \right) \sim 0.
+\]
+Thus we have a completely regular perturbation problem for the roots, which we readily see are given by
+\[
+\Omega \sim \frac{1}{2}\left(-s\omega \pm \sqrt{\omega^{2}+4g|k|} \right), ~ -\frac{s\tilde{\omega}}{2}.
+\]
+Thus of the three roots we find, two give the dispersion relationship we find in the body of the text using ${\bf u}\sim \omega z \hat{{\bf i}}$.  Looking at the affiliated disturbances of the relevant free surface and internal wave, we find that  
+\[
+\eta_{1} \sim \alpha_{12}\frac{ik}{\Omega}e^{i\theta} + \mbox{cc}, ~ \eta_{2} \sim \alpha_{12}\frac{ik}{\Omega^{3}}\cosh(kh_{0})\left(\Omega^{2}-(1-\tilde{\epsilon})\left( g|k|+s\omega\Omega\right)\right)e^{i\theta}+ \mbox{cc}.
+\]
+Thus if we choose $\Omega$ so that $\Omega^{2}-\left( g|k|+s\omega\Omega\right)= 0$, the magnitude of the internal wave essentially vanishes, thereby localizing dynamics along the free surface near $z=0$.  Therefore, while not necessarily physically justifiable throughout the bulk of the fluid, our simplified shear profile assumption produces results which are asymptotically consistent with a more sophisticated treatment of the shear profile.  
+
+We note though that the more physically realistic shear profile shows that there is a choice of $\Omega$ which corresponds to a non-trivial internal mode near $z=-h_{0}$.  We also note that this choice of $\Omega$ makes many of the terms in our modulation theory singular, thus showing that this case would require a markedly different treatment.  While interesting, this issue is beyond the scope of the current paper and will be addressed in future research. 
+
+\subsection*{Higher-Order-Dispersive Corrections to the VDE}
+
+To better understand why we must include the higher-order corrections to the dispersion used in the VDE, we examine how such terms are found from first principles.  To leading order from the kinetic equation over an infinitely deep fluid we have that 
+\[
+\eta_{t} = -\mathcal{H}Q,
+\]
+where $q(x,t) = \phi(x,\eta(x,t),t)$, $Q = q_{x}$, and $\mathcal{H}$ is the Hilbert transform.  Likewise, from the Bernoulli equation we have to leading order that
+\[
+Q _{t}+ \omega\eta_{t} + \eta_{x}= 0, 
+\]
+so that by combining the two expressions we have the wave equation in $\eta$ alone given by 
+\begin{equation}
+\eta_{tt}- \omega\mathcal{H}\eta_{t} - \mathcal{H}\eta_{x}= 0.
+\label{linearwaveeq}
+\end{equation}
+Noting that 
+\[
+\left(-\mathcal{H} \pd_{x}\right)^{\widehat{}} = \left|k\right|,
+\]
+we then define the self-adjoint pseudo-differential operator $\mathcal{L}_{+}$ with symbol 
+\[
+\mathcal{\widehat{L}}_{+} = \sqrt{\left|k\right| }.
+\]
+Multiplying by $\eta_{t}$ and integrating over space gives us the conserved quantity
+\[
+\int_{\mathbb{R}} \left(\frac{1}{2}\eta_{t}^{2} + \frac{1}{2}\left(\mathcal{L}_{+}\eta \right)^{2}\right) dx = \tilde{E}.
+\]
+Note, 
+\[
+\int_{\mathbb{R}}\eta_{t}\mathcal{H}\eta_{t} dx = \frac{1}{2\pi}\int_{\mathbb{R}} i\mbox{sgn}(k) \left|\hat{\eta}_{t}(k,t) \right|^{2} dk = 0,
+\]
+since we assume $\eta_{t}$ is real.  
+
+Letting
+\[
+\eta(x,t) = \eta_{1}(\xi,\tau)e^{i\theta}+\mbox{cc}, ~ \xi = \epsilon(x+c_{g}t), ~ \tau = \epsilon^{2}t, ~ \theta = k_{0}x + \Omega(\omega,k_{0})t,
+\]
+and using the corresponding multiple-scales expansions
+\[
+\pd_{x} = ik_{0} + \epsilon \pd_{\xi}, ~ \pd_{t} = i\Omega + \epsilon c_{g}\pd_{\xi} + \epsilon^{2}\pd_{\tau}, 
+\]
+Equation \eqref{linearwaveeq} then becomes 
+\begin{multline*}
+\left(\Omega^{2} -s\omega\Omega - |k_{0}|\right)\eta_{1} + 2i\epsilon\left((2\Omega-s\omega)c_{g} - s\right)\pd_{\xi}\eta_{1}\\
++ \epsilon^{2}\left(i(2\Omega-s\omega)\pd_{\tau}+c^{2}_{g}\pd^{2}_{\xi} + 2\epsilon c_{g}\pd^{2}_{\xi \tau} + \epsilon^{2}\pd^{2}_{\tau}\right)\eta_{1} = 0.
+\end{multline*}
+Standard NLS theory has the first two terms vanishing, thus leaving us with the slowly evolving wave equation 
+\[
+\left(i(2\Omega-s\omega)\pd_{\tau}+c^{2}_{g}\pd^{2}_{\xi} + 2\epsilon c_{g}\pd^{2}_{\xi \tau} + \epsilon^{2}\pd^{2}_{\tau}\right)\eta_{1} = 0.
+\]
+Taking a Fourier transform in space so that $\pd_{\xi}\rightarrow i\tilde{k}$, we see the above wave equation propagates information temporally at the characteristic frequencies $\lambda_{\pm}$ where
+\[
+\lambda_{\pm} = \frac{(2\Omega-s\omega)}{2\epsilon^{2}}\left(-\left(1+\frac{2\epsilon c_{g}\tilde{k}}{2\Omega-s\omega}\right) \pm \left(1 + \frac{4\epsilon c_{g}\tilde{k}}{2\Omega-s\omega} \right)^{1/2} \right)
+\]
+Likewise, proceeding as above, we can readily derive the corresponding conserved quantity
+\[
+\frac{s\epsilon^{2}}{\omega-2s\Omega}\int_{\mathbb{R}}\left| \pd_{\tau}\eta_{1}\right|^{2}d\xi + \alpha_{d}\int_{\mathbb{R}} \left| \pd_{\xi}\eta_{1}\right|^{2}d\xi + \frac{\epsilon\tilde{\sigma}i}{\omega-2s\Omega}\int_{\mathbb{R}}\pd_{\xi}\eta^{\ast}_{1}\pd^{2}_{\xi}\eta_{1}d\xi= \bar{E}.
+\]
+
+
+\end{document}
