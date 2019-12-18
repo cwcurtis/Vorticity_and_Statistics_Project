@@ -1,0 +1,141 @@
+ \documentclass[a4paper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{update}
+
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\bt}{\begin{tabular}}
+\newcommand{\et}{\end{tabular}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+
+\newcommand{\bp}{\begin{pmatrix}}
+\newcommand{\ep}{\end{pmatrix}}
+
+\newcommand{\pd}{\partial}
+\newcommand{\sech}{\mbox{sech}}
+
+\newcommand{\cf}{{\it cf.}~}
+
+\newcommand{\ltwo}{L_{2}(\mathbb{R}^{2})}
+\newcommand{\smooth}{C^{\infty}_{0}(\mathbb{R}^{2})}
+
+\newcommand{\br}{{\bf r}}
+\newcommand{\bk}{{\bf k}}
+\newcommand{\bv}{{\bf v}}
+
+\newcommand{\gnorm}[1]{\left|\left| #1\right|\right|}
+\newcommand{\ipro}[2]{\left<#1,#2 \right>}
+
+\begin{document}
+As noted in the text, the assumption that the fluid velocity is to leading order given by 
+\[
+{\bf u} \approx \omega z \hat{{\bf i}}
+\]
+is clearly unrealistic insofar as it leads to currents of infinite speed as one descends through the fluid.  A more realistic, though also more complicated, ansatz is to suppose that to leading order we have that ${\bf u}\approx u(z)\hat{{\bf i}}$ where  
+\[
+u(z) = \left\{\ba{rl} \omega z, & -h_{0} \leq z < 0 \\
+\frac{-\omega h_{0}}{h_{1}-h_{0}} (z+h_{1}), & -h_{1} \leq z < -h_{0} \\
+0, & z < -h_{1}
+\ea \right.
+\] 
+where $h_{1}>h_{0}\gg 1$, so that we are looking at a deep, continuous shear profile which is zero at or near the surface $z=\epsilon \eta(x,t)$ and at the depth $z=-h_{1}$, after which the fluid is to leading order quiescent.
+
+While a full, nonlinear description of the above shear profile would require two more freely evolving interfaces, and thus is beyond the scope of this paper, we can readily find the dispersion relationship affiliated with this profile.  This then allows us to provide some analytic argument for why we study an otherwise unphysical velocity profile in the main body of the text.  Likewise, information from the dispersion relationship provides us with a better understanding of how depth varying shear profiles induce both surface and internal waves.
+
+Following relatively classical approaches, we introduce three fluid velocities
+\begin{align*}
+{\bf u}_{1} = \omega z \hat{{\bf i}} + \epsilon \nabla \phi_{1}, &  ~-h_{0}+\epsilon \eta_{2} < z < \epsilon \eta_{1}\\
+{\bf u}_{2} = \frac{-\omega h_{0}}{h_{1}-h_{0}} (z+h_{1}) \hat{{\bf i}} + \epsilon \nabla \phi_{2}, & ~-h_{1}+\epsilon \eta_{3} < z < -h_{0}+\epsilon \eta_{2}\\
+{\bf u}_{3} = \epsilon \nabla \phi_{3}, & ~z < -h_{1} + \epsilon \eta_{3}
+\end{align*}    
+so that after linearizing around the small disturbances, we have the following system of evolution equations describing the behavior of small disturbances
+\[
+\pd_{t}\phi_{1} + g\eta_{1} + \omega \pd_{t}\pd_{x}^{-1}\eta_{1} = 0, ~ z = 0 
+\]
+\[
+\pd_{t}\eta_{1} = \pd_{z}\phi_{1}, ~ z = 0, 
+\]
+\[
+\pd_{t}\phi_{2} - \frac{\omega h_{1}}{h_{1}-h_{0}} \pd_{t}\pd_{x}^{-1}\eta_{2} = \pd_{t}\phi_{1} , ~ z = -h_{0} 
+\]
+\begin{align*}
+\pd_{t}\eta_{2} = \pd_{z}\phi_{2}, & ~ z = -h_{0},\\
+\pd_{t}\eta_{2} = \pd_{z}\phi_{1}, & ~ z = -h_{0}, 
+\end{align*}
+and
+\[
+\pd_{t}\phi_{3} = \pd_{t}\phi_{2} - \frac{\omega h_{0}}{h_{1}-h_{0}} \pd_{t}\pd_{x}^{-1}\eta_{3}, ~ z = -h_{1} 
+\]
+\begin{align*}
+\pd_{t}\eta_{3} = \pd_{z}\phi_{3}, & ~ z = -h_{1},\\
+\pd_{t}\eta_{3} = \pd_{z}\phi_{2}, & ~ z = -h_{1}. 
+\end{align*}
+Taking each function $\phi_{j}$ to be harmonic and letting $\pd_{z}\phi_{3}\rightarrow 0 $ as $z\rightarrow -\infty$ gives us the following solutions for each of the scalar velocity potentials
+\[
+\phi_{1}(x,z,t) = \left(\alpha_{11}\cosh(kz)+\alpha_{12}\sinh(kz)\right)e^{i\theta(x,t)}
+\]
+\[
+\phi_{2}(x,z,t) = \left(\alpha_{21}\cosh(k(z+h_{0}))+\alpha_{22}\sinh(k(z+h_{0}))\right)e^{i\theta(x,t)}
+\]
+and
+\[
+\phi_{3}(x,z,t) = \alpha_{3}e^{|k|(z+h_{1})}e^{i\theta(x,t)}
+\]
+where $\theta(x,t) = kx + \Omega(k,\omega)t$.
+
+This then gives us the linear system of equations 
+\begin{align*}
+\Omega \alpha_{11} = & \left(\frac{gk}{\Omega} + \omega \right)\alpha_{12} \\
+\Omega\left(\alpha_{11}\cosh(kh_{0}) -\alpha_{12}\sinh(kh_{0}) \right) = &  \Omega \alpha_{21} + \frac{\omega h_{1}}{\delta h}\alpha_{22}\\
+\Omega\left(\alpha_{21}\cosh(k\delta h) - \alpha_{22}\sinh(k \delta h) \right) = & \left(\Omega - \frac{\omega h_{0} s_{k}}{\delta h} \right)\alpha_{3}\\
+\alpha_{22} = & -\alpha_{11}\sinh(kh_{0}) + \alpha_{12}\cosh(kh_{0})  \\
+\alpha_{3} = & s_{k}\left(-\alpha_{21}\sinh(k\delta h) + \alpha_{22}\cosh(k\delta h)\right)
+\end{align*}
+where $\delta h = h_{1}-h_{0}$ and $s_{k}=\mbox{sgn}(k)$.  From this we derive the dispersion relationship 
+\[
+\frac{gk}{\Omega} + \omega -\Omega \tanh(kh_{0}) + \left(\frac{1}{\Omega}\left(\frac{gk}{\Omega} + \omega\right)\tanh(kh_{0}) - 1\right)\left(\frac{\omega h_{1}}{\delta h} + \Omega \Omega_{1}(k\delta h)\right) = 0
+\]
+where
+\[
+\Omega_{1}(k\delta h) = \frac{s_{k}\left(\Omega -\frac{\omega h_{0}}{\delta h}s_{k}\right)+\Omega \tanh(k\delta h)}{\Omega +s_{k}\left(\Omega - \frac{\omega h_{0}}{\delta h}s_{k}\right)\tanh(k\delta h)}.
+\]
+While in general we would have to find the roots of a fifth-order polynomial to determine the values of $\Omega$, we see for $h_{1}\gg h_{0}$ that $\Omega_{1}\sim s_{k}$, and thus we get that the dispersion relationship simplifies to 
+\[
+\frac{gk}{\Omega} + \omega -\Omega \tanh(kh_{0}) + \left(\frac{1}{\Omega}\left(\frac{gk}{\Omega} + \omega\right)\tanh(kh_{0}) - 1\right)\left(\tilde{\omega} + s_{k}\Omega \right) \sim 0,
+\]
+where 
+\[
+\tilde{\omega} = \frac{\omega h_{1}}{\delta h}.
+\]
+Since $\tilde{\omega}$ only approaches $\omega$ at an algebraic rate, it seems appropriate to keep it included in the analysis.  Letting 
+\[
+\left|\tanh(kh_{0}) \right| = 1 - \tilde{\epsilon}, 
+\]
+and noting that $\tilde{\epsilon}$ vanishes to zero exponentially fast as we increase $h_{0}$, we see the reduced dispersion relationship factors into the form
+\[
+\left(2\Omega + s_{k}\tilde{\omega} \right)\left(g\left|k\right| + s_{k}\omega \Omega - \Omega^{2} \right) + \tilde{\epsilon}\left(\Omega^{3} - (s_{k}\tilde{\omega} + \Omega)(g|k|+\omega s_{k}\Omega) \right) \sim 0.
+\]
+Thus we have a completely regular perturbation problem for the roots, which we readily see are given by
+\[
+\Omega \sim \frac{1}{2}\left(-s_{k}\omega \pm \sqrt{\omega^{2}+4g|k|} \right), ~ -\frac{s_{k}\tilde{\omega}}{2}.
+\]
+Thus we get back the dispersion relationship we would expect.  However, we also find another mode which would correspond to an infinite group velocity for the modulated wave packets we study via the NLSE and VDE.   
+\end{document}
