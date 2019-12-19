@@ -1,4 +1,4 @@
-function w = nls_solver(K,Llx,nmax,ad,anl,dt,uint)
+function sol = nls_solver(K,Llx,nmax,ad,anl,dt,samp_inds,uint)
 
     % solves u_t = dk2Om*u_xx + a3*|u|^2*u 
 
@@ -18,6 +18,8 @@ function w = nls_solver(K,Llx,nmax,ad,anl,dt,uint)
         
         w = uint;             
         
+        sol = zeros(KT,length(samp_inds));
+        sol(:,1) = w;
     % Begin setup of RK4 method
 
         Lap = 1i*dt*ad*Dx2;
@@ -25,7 +27,7 @@ function w = nls_solver(K,Llx,nmax,ad,anl,dt,uint)
         E2 = E.^2;
                 
     % Solve NLS equation in time
-    
+        cnt = 2;
         for nn=1:nmax            
             wp = ifft(w);
             a = 1i*dt*anl*fft(wp.^2.*conj(wp));
@@ -45,6 +47,10 @@ function w = nls_solver(K,Llx,nmax,ad,anl,dt,uint)
             
             w = E2.*w + (E2.*a + 2*E.*(b+c) + d)/6;                                        
             w(Kc:Kuc) = 0;
+            if nn == samp_inds(cnt)
+                sol(:,cnt) = w;
+                cnt = cnt + 1;
+            end
         end
         
 end

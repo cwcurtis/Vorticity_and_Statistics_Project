@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{dysthe2}
 K.B. Dysthe, K.~Trulsen, H.E. Krogstad, and H.~Socquet-Juglard.
@@ -24,26 +24,67 @@ R.~Thomas, C.~Kharif, and M.~Manna.
   depth with constant vorticity.
 \newblock {\em Phys. Fluids}, 24(12):127102, 2012.
 
+\bibitem{janssen}
+P.A.E.M. Janssen.
+\newblock Nonlinear four-wave interactions and freak waves.
+\newblock {\em J. Phys. Ocean.}, 33:863--884, 2003.
+
+\bibitem{hasselmann}
+K.~Hasselmann.
+\newblock On the non-linear energy transfer in a gravity-wave spectrum. {P}art
+  1. {G}eneral theory.
+\newblock {\em J. Fluid Mech.}, 12:481--500, 1962.
+
+\bibitem{holthuijsen}
+L.~Holthuijsen.
+\newblock {\em Waves in Oceanic and Coastal Waters}.
+\newblock Cambridge University Press, Cambridge, 2007.
+
 \bibitem{alber}
 I.E. Alber.
 \newblock The effects of randomness on the stability of two-dimensional surface
   wavetrains.
 \newblock {\em Proc. Roc. Soc. A}, 363:525--546, 1978.
 
+\bibitem{alber2}
+I.E. Alber and P.G. Saffman.
+\newblock Stability of random nonlinear deep water waves with finite bandwidth
+  spectra.
+\newblock Technical report, TRW Defense and Space System Group, 1978.
+
+\bibitem{slunyaev}
+A.~Slunyaev, A.~Sergeeva, and E.~Pelinovsky.
+\newblock Wave amplification in the framework of forced nonlinear
+  {S}chr\"{o}dinger equation: {T}he rogue wave context.
+\newblock {\em Physica D}, 303:18--27, 2015.
+
+\bibitem{eeltink}
+D.~Eeltink, A.~Armaroli, Y.M. Ducimetière, J.~Kasparian, and M.~Brunetti.
+\newblock Single-spectrum prediction of kurtosis of water waves in a
+  nonconservative model.
+\newblock {\em Phys. Rev. E}, 100(1):013102, 2019.
+
 \bibitem{curtis8}
 C.W. Curtis, J.C. Carter, and H.~Kalisch.
 \newblock Particle paths in nonlinear {S}chr\"{o}dinger models in the presence
   of linear shear currents.
-\newblock {\em J. Fluid Mech.}, to appear.
+\newblock {\em J. Fluid Mech.}, to appear, 2018.
+
+\bibitem{touboul}
+J.~Touboul and C.~Kharif.
+\newblock Effect of viscosity on the generation of rouge waves due to
+  dispersive focusing.
+\newblock {\em Nat. Hazards}, 84:585--598, 2016.
 
 \bibitem{ashton}
 A.C.L. Ashton and A.S. Fokas.
 \newblock A non-local formulation of rotational water waves.
 \newblock {\em J. Fluid Mech.}, 689:129--148, 2011.
 
-\bibitem{afm}
-M.J. Ablowitz, A.S. Fokas, and Z.H. Musslimani.
-\newblock On a new non-local formulation of water waves.
-\newblock {\em J. Fluid Mech.}, 562:313--343, 2006.
+\bibitem{dysthe1}
+K.B. Dysthe.
+\newblock Note on a modification to the nonlinear {S}chr\"{o}dinger equation
+  for application to deep water waves.
+\newblock {\em Proc. Roc. Soc. A}, 369:105--114, 1979.
 
 \end{thebibliography}

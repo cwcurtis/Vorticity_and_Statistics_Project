@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.8)  10 APR 2019 13:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.8)  27 SEP 2019 10:26
 entering extended mode
 **D:/My*Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/ra
 ndom_vorticity.tex
@@ -220,266 +220,678 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4] [5]
-Package epstopdf Info: Source file: <omega_n1_ep0pt1_dt5en4.eps>
-(epstopdf)                    date: 2019-03-08 12:17:18
-(epstopdf)                    size: 32238 bytes
-(epstopdf)             Output file: <omega_n1_ep0pt1_dt5en4-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2019-03-08 12:28:57
-(epstopdf)                    size: 8908 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega_n1_ep0pt1_dt5en4-eps-
-converted-to.pdf omega_n1_ep0pt1_dt5en4.eps>
-(epstopdf)             \includegraphics on input line 193.
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4] [5] [6] [7]
+Package epstopdf Info: Source file: <pdf_w_0_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)                    date: 2019-09-24 11:52:13
+(epstopdf)                    size: 31400 bytes
+(epstopdf)             Output file: <pdf_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-09-24 11:52:54
+(epstopdf)                    size: 12238 bytes
+(epstopdf)             Command: <epstopdf --outfile=pdf_w_0_ep_pt05_Nens_512_si
+g0_1pt05-eps-converted-to.pdf pdf_w_0_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf, id=31, 794.97pt x 540.0175pt>
-File: omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf>
-Package pdftex.def Info: omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf used on in
-put line 193.
-(pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
-Package epstopdf Info: Source file: <omega_n1_ep0pt04.eps>
-(epstopdf)                    date: 2019-03-08 12:20:36
-(epstopdf)                    size: 33396 bytes
-(epstopdf)             Output file: <omega_n1_ep0pt04-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-08 12:29:22
-(epstopdf)                    size: 9345 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega_n1_ep0pt04-eps-conver
-ted-to.pdf omega_n1_ep0pt04.eps>
-(epstopdf)             \includegraphics on input line 195.
+<pdf_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=40, 794.97pt x 54
+7.04375pt>
+File: pdf_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use pdf_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: pdf_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.p
+df used on input line 197.
+(pdftex.def)             Requested size: 170.709pt x 110.95938pt.
+Package epstopdf Info: Source file: <mean_w_0_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)                    date: 2019-09-24 09:06:55
+(epstopdf)                    size: 18509 bytes
+(epstopdf)             Output file: <mean_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2019-09-24 09:08:41
+(epstopdf)                    size: 6244 bytes
+(epstopdf)             Command: <epstopdf --outfile=mean_w_0_ep_pt05_Nens_512_s
+ig0_1pt05-eps-converted-to.pdf mean_w_0_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega_n1_ep0pt04-eps-converted-to.pdf, id=32, 794.97pt x 540.0175pt>
-File: omega_n1_ep0pt04-eps-converted-to.pdf Graphic file (type pdf)
+<mean_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=41, 794.97pt x 4
+96.85625pt>
+File: mean_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use mean_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: mean_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.
+pdf used on input line 197.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <std_w_0_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)                    date: 2019-09-24 08:51:12
+(epstopdf)                    size: 17837 bytes
+(epstopdf)             Output file: <std_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:54:22
+(epstopdf)                    size: 5840 bytes
+(epstopdf)             Command: <epstopdf --outfile=std_w_0_ep_pt05_Nens_512_si
+g0_1pt05-eps-converted-to.pdf std_w_0_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 199.
+Package epstopdf Info: Output file is already uptodate.
 
-<use omega_n1_ep0pt04-eps-converted-to.pdf>
-Package pdftex.def Info: omega_n1_ep0pt04-eps-converted-to.pdf used on input li
-ne 195.
-(pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
-Package epstopdf Info: Source file: <omega_n1_ep0pt1_dt5en4_width12.eps>
-(epstopdf)                    date: 2019-03-08 12:19:09
-(epstopdf)                    size: 57822 bytes
-(epstopdf)             Output file: <omega_n1_ep0pt1_dt5en4_width12-eps-convert
+<std_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=42, 794.97pt x 49
+6.85625pt>
+File: std_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use std_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: std_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.p
+df used on input line 199.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <kts_w_0_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)                    date: 2019-09-24 08:45:40
+(epstopdf)                    size: 19090 bytes
+(epstopdf)             Output file: <kts_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:47:15
+(epstopdf)                    size: 6336 bytes
+(epstopdf)             Command: <epstopdf --outfile=kts_w_0_ep_pt05_Nens_512_si
+g0_1pt05-eps-converted-to.pdf kts_w_0_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 199.
+Package epstopdf Info: Output file is already uptodate.
+
+<kts_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=43, 794.97pt x 49
+6.85625pt>
+File: kts_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use kts_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: kts_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.p
+df used on input line 199.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+
+Overfull \hbox (9.59692pt too wide) in paragraph at lines 196--202
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <pdf_w_0_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)                    date: 2019-09-24 08:38:11
+(epstopdf)                    size: 38467 bytes
+(epstopdf)             Output file: <pdf_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:41:04
+(epstopdf)                    size: 14984 bytes
+(epstopdf)             Command: <epstopdf --outfile=pdf_w_0_ep_pt05_Nens_512_si
+g0_2sqrt2-eps-converted-to.pdf pdf_w_0_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)             \includegraphics on input line 209.
+Package epstopdf Info: Output file is already uptodate.
+
+<pdf_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=44, 794.97pt x 4
+96.85625pt>
+File: pdf_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use pdf_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: pdf_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.
+pdf used on input line 209.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <mean_w_0_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+
+(epstopdf)                    date: 2019-09-24 09:10:01
+(epstopdf)                    size: 18555 bytes
+(epstopdf)             Output file: <mean_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 09:11:14
+(epstopdf)                    size: 6275 bytes
+(epstopdf)             Command: <epstopdf --outfile=mean_w_0_ep_pt05_Nens_512_s
+ig0_2sqrt2-eps-converted-to.pdf mean_w_0_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)             \includegraphics on input line 209.
+Package epstopdf Info: Output file is already uptodate.
+
+<mean_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=45, 794.97pt x 
+547.04375pt>
+File: mean_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic file (
+type pdf)
+ <use mean_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: mean_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to
+.pdf used on input line 209.
+(pdftex.def)             Requested size: 161.9989pt x 111.47691pt.
+Package epstopdf Info: Source file: <std_w_0_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)                    date: 2019-09-24 08:51:03
+(epstopdf)                    size: 17817 bytes
+(epstopdf)             Output file: <std_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:54:23
+(epstopdf)                    size: 5845 bytes
+(epstopdf)             Command: <epstopdf --outfile=std_w_0_ep_pt05_Nens_512_si
+g0_2sqrt2-eps-converted-to.pdf std_w_0_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)             \includegraphics on input line 211.
+Package epstopdf Info: Output file is already uptodate.
+
+<std_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=46, 794.97pt x 4
+96.85625pt>
+File: std_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use std_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: std_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.
+pdf used on input line 211.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <kts_w_0_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)                    date: 2019-09-24 08:45:32
+(epstopdf)                    size: 19420 bytes
+(epstopdf)             Output file: <kts_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:47:15
+(epstopdf)                    size: 6383 bytes
+(epstopdf)             Command: <epstopdf --outfile=kts_w_0_ep_pt05_Nens_512_si
+g0_2sqrt2-eps-converted-to.pdf kts_w_0_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)             \includegraphics on input line 211.
+Package epstopdf Info: Output file is already uptodate.
+
+<kts_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=47, 794.97pt x 4
+96.85625pt>
+File: kts_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use kts_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: kts_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.
+pdf used on input line 211.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+
+Overfull \hbox (9.59692pt too wide) in paragraph at lines 208--214
+ [][] 
+ []
+
+[8]
+Package epstopdf Info: Source file: <pdf_w_nhf_ep_pt05_Nens_512_sig0_1pt05.eps>
+
+(epstopdf)                    date: 2019-09-24 11:52:30
+(epstopdf)                    size: 34174 bytes
+(epstopdf)             Output file: <pdf_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 11:52:54
+(epstopdf)                    size: 13376 bytes
+(epstopdf)             Command: <epstopdf --outfile=pdf_w_nhf_ep_pt05_Nens_512_
+sig0_1pt05-eps-converted-to.pdf pdf_w_nhf_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 227.
+Package epstopdf Info: Output file is already uptodate.
+
+<pdf_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=51, 794.97pt x 
+547.04375pt>
+File: pdf_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file (
+type pdf)
+ <use pdf_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: pdf_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to
+.pdf used on input line 227.
+(pdftex.def)             Requested size: 170.709pt x 110.95938pt.
+Package epstopdf Info: Source file: <mean_w_nhf_ep_pt05_Nens_512_sig0_1pt05.eps
+>
+(epstopdf)                    date: 2019-09-24 09:04:04
+(epstopdf)                    size: 18539 bytes
+(epstopdf)             Output file: <mean_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 09:08:42
+(epstopdf)                    size: 6227 bytes
+(epstopdf)             Command: <epstopdf --outfile=mean_w_nhf_ep_pt05_Nens_512
+_sig0_1pt05-eps-converted-to.pdf mean_w_nhf_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 227.
+Package epstopdf Info: Output file is already uptodate.
+
+<mean_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=52, 794.97pt x
+ 496.85625pt>
+File: mean_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file 
+(type pdf)
+
+<use mean_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: mean_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-t
+o.pdf used on input line 227.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <std_w_nhf_ep_pt05_Nens_512_sig0_1pt05.eps>
+
+(epstopdf)                    date: 2019-09-24 08:53:09
+(epstopdf)                    size: 17501 bytes
+(epstopdf)             Output file: <std_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:54:23
+(epstopdf)                    size: 5824 bytes
+(epstopdf)             Command: <epstopdf --outfile=std_w_nhf_ep_pt05_Nens_512_
+sig0_1pt05-eps-converted-to.pdf std_w_nhf_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 229.
+Package epstopdf Info: Output file is already uptodate.
+
+<std_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=53, 794.97pt x 
+496.85625pt>
+File: std_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file (
+type pdf)
+ <use std_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: std_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to
+.pdf used on input line 229.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <kts_w_nhf_ep_pt05_Nens_512_sig0_1pt05.eps>
+
+(epstopdf)                    date: 2019-09-24 08:46:46
+(epstopdf)                    size: 18714 bytes
+(epstopdf)             Output file: <kts_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:47:16
+(epstopdf)                    size: 6311 bytes
+(epstopdf)             Command: <epstopdf --outfile=kts_w_nhf_ep_pt05_Nens_512_
+sig0_1pt05-eps-converted-to.pdf kts_w_nhf_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 229.
+Package epstopdf Info: Output file is already uptodate.
+
+<kts_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=54, 794.97pt x 
+496.85625pt>
+File: kts_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file (
+type pdf)
+ <use kts_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: kts_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to
+.pdf used on input line 229.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+
+Overfull \hbox (9.59692pt too wide) in paragraph at lines 226--232
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <pdf_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2.eps
+>
+(epstopdf)                    date: 2019-09-24 08:40:39
+(epstopdf)                    size: 44883 bytes
+(epstopdf)             Output file: <pdf_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:41:05
+(epstopdf)                    size: 17059 bytes
+(epstopdf)             Command: <epstopdf --outfile=pdf_w_nhf_ep_pt05_Nens_512_
+sig0_2sqrt2-eps-converted-to.pdf pdf_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)             \includegraphics on input line 239.
+Package epstopdf Info: Output file is already uptodate.
+
+<pdf_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=55, 794.97pt x
+ 496.85625pt>
+File: pdf_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic file 
+(type pdf)
+
+<use pdf_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: pdf_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-t
+o.pdf used on input line 239.
+(pdftex.def)             Requested size: 170.709pt x 110.96146pt.
+Package epstopdf Info: Source file: <mean_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2.ep
+s>
+(epstopdf)                    date: 2019-09-24 09:09:20
+(epstopdf)                    size: 18534 bytes
+(epstopdf)             Output file: <mean_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 09:09:35
+(epstopdf)                    size: 6267 bytes
+(epstopdf)             Command: <epstopdf --outfile=mean_w_nhf_ep_pt05_Nens_512
+_sig0_2sqrt2-eps-converted-to.pdf mean_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)             \includegraphics on input line 239.
+Package epstopdf Info: Output file is already uptodate.
+
+<mean_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=56, 794.97pt 
+x 547.04375pt>
+File: mean_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use mean_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: mean_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-
+to.pdf used on input line 239.
+(pdftex.def)             Requested size: 161.9989pt x 111.47691pt.
+Package epstopdf Info: Source file: <std_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2.eps
+>
+(epstopdf)                    date: 2019-09-24 08:54:07
+(epstopdf)                    size: 17534 bytes
+(epstopdf)             Output file: <std_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:54:24
+(epstopdf)                    size: 5857 bytes
+(epstopdf)             Command: <epstopdf --outfile=std_w_nhf_ep_pt05_Nens_512_
+sig0_2sqrt2-eps-converted-to.pdf std_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)             \includegraphics on input line 241.
+Package epstopdf Info: Output file is already uptodate.
+
+<std_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=57, 794.97pt x
+ 496.85625pt>
+File: std_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic file 
+(type pdf)
+
+<use std_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: std_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-t
+o.pdf used on input line 241.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <kts_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2.eps
+>
+(epstopdf)                    date: 2019-09-24 08:45:24
+(epstopdf)                    size: 19071 bytes
+(epstopdf)             Output file: <kts_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:47:16
+(epstopdf)                    size: 6364 bytes
+(epstopdf)             Command: <epstopdf --outfile=kts_w_nhf_ep_pt05_Nens_512_
+sig0_2sqrt2-eps-converted-to.pdf kts_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2.eps>
+(epstopdf)             \includegraphics on input line 241.
+Package epstopdf Info: Output file is already uptodate.
+
+<kts_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=58, 794.97pt x
+ 496.85625pt>
+File: kts_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic file 
+(type pdf)
+
+<use kts_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: kts_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-t
+o.pdf used on input line 241.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+
+Overfull \hbox (9.59692pt too wide) in paragraph at lines 238--244
+ [][] 
+ []
+
+[9 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/
+pdf_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf> <D:/My Documents/Desk
+top/Vorticity_and_Statistics_Project_Git_Clone/Writeup/mean_w_0_ep_pt05_Nens_51
+2_sig0_1pt05-eps-converted-to.pdf> <D:/My Documents/Desktop/Vorticity_and_Stati
+stics_Project_Git_Clone/Writeup/std_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-convert
+ed-to.pdf> <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/
+Writeup/kts_w_0_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pdf_w_1pt12_ep_pt05_Nens_512_sig0_1pt05.ep
+s>
+(epstopdf)                    date: 2019-09-24 11:52:18
+(epstopdf)                    size: 26906 bytes
+(epstopdf)             Output file: <pdf_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 11:52:55
+(epstopdf)                    size: 10294 bytes
+(epstopdf)             Command: <epstopdf --outfile=pdf_w_1pt12_ep_pt05_Nens_51
+2_sig0_1pt05-eps-converted-to.pdf pdf_w_1pt12_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 257.
+Package epstopdf Info: Output file is already uptodate.
+
+<pdf_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=74, 794.97pt 
+x 547.04375pt>
+File: pdf_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use pdf_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: pdf_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-
+to.pdf used on input line 257.
+(pdftex.def)             Requested size: 170.709pt x 110.95938pt.
+Package epstopdf Info: Source file: <mean_w_1pt12_ep_pt05_Nens_512_sig0_1pt05.e
+ps>
+(epstopdf)                    date: 2019-09-24 09:08:20
+(epstopdf)                    size: 18913 bytes
+(epstopdf)             Output file: <mean_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 09:08:43
+(epstopdf)                    size: 6285 bytes
+(epstopdf)             Command: <epstopdf --outfile=mean_w_1pt12_ep_pt05_Nens_5
+12_sig0_1pt05-eps-converted-to.pdf mean_w_1pt12_ep_pt05_Nens_512_sig0_1pt05.eps
+>
+(epstopdf)             \includegraphics on input line 257.
+Package epstopdf Info: Output file is already uptodate.
+
+<mean_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=75, 794.97pt
+ x 496.85625pt>
+File: mean_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use mean_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: mean_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted
+-to.pdf used on input line 257.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <std_w_1pt12_ep_pt05_Nens_512_sig0_1pt05.ep
+s>
+(epstopdf)                    date: 2019-09-24 08:50:55
+(epstopdf)                    size: 18232 bytes
+(epstopdf)             Output file: <std_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:54:24
+(epstopdf)                    size: 5895 bytes
+(epstopdf)             Command: <epstopdf --outfile=std_w_1pt12_ep_pt05_Nens_51
+2_sig0_1pt05-eps-converted-to.pdf std_w_1pt12_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 259.
+Package epstopdf Info: Output file is already uptodate.
+
+<std_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=76, 794.97pt 
+x 496.85625pt>
+File: std_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use std_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: std_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-
+to.pdf used on input line 259.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <kts_w_1pt12_ep_pt05_Nens_512_sig0_1pt05.ep
+s>
+(epstopdf)                    date: 2019-09-24 08:43:35
+(epstopdf)                    size: 19087 bytes
+(epstopdf)             Output file: <kts_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:47:17
+(epstopdf)                    size: 6344 bytes
+(epstopdf)             Command: <epstopdf --outfile=kts_w_1pt12_ep_pt05_Nens_51
+2_sig0_1pt05-eps-converted-to.pdf kts_w_1pt12_ep_pt05_Nens_512_sig0_1pt05.eps>
+(epstopdf)             \includegraphics on input line 259.
+Package epstopdf Info: Output file is already uptodate.
+
+<kts_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf, id=77, 794.97pt 
+x 496.85625pt>
+File: kts_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use kts_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>
+Package pdftex.def Info: kts_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-
+to.pdf used on input line 259.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+
+Overfull \hbox (9.59692pt too wide) in paragraph at lines 256--262
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <pdf_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2.e
+ps>
+(epstopdf)                    date: 2019-09-24 08:40:32
+(epstopdf)                    size: 29451 bytes
+(epstopdf)             Output file: <pdf_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:41:06
+(epstopdf)                    size: 11238 bytes
+(epstopdf)             Command: <epstopdf --outfile=pdf_w_1pt12_ep_pt05_Nens_51
+2_sig0_2sqrt2-eps-converted-to.pdf pdf_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2.eps
+>
+(epstopdf)             \includegraphics on input line 269.
+Package epstopdf Info: Output file is already uptodate.
+
+<pdf_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=78, 794.97pt
+ x 496.85625pt>
+File: pdf_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use pdf_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: pdf_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted
+-to.pdf used on input line 269.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <mean_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2.
+eps>
+(epstopdf)                    date: 2019-09-24 09:07:28
+(epstopdf)                    size: 19766 bytes
+(epstopdf)             Output file: <mean_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 09:08:43
+(epstopdf)                    size: 6627 bytes
+(epstopdf)             Command: <epstopdf --outfile=mean_w_1pt12_ep_pt05_Nens_5
+12_sig0_2sqrt2-eps-converted-to.pdf mean_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2.e
+ps>
+(epstopdf)             \includegraphics on input line 269.
+Package epstopdf Info: Output file is already uptodate.
+
+<mean_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=79, 794.97p
+t x 496.85625pt>
+File: mean_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic fi
+le (type pdf)
+
+<use mean_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: mean_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converte
+d-to.pdf used on input line 269.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <std_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2.e
+ps>
+(epstopdf)                    date: 2019-09-24 08:52:12
+(epstopdf)                    size: 18207 bytes
+(epstopdf)             Output file: <std_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:54:25
+(epstopdf)                    size: 5866 bytes
+(epstopdf)             Command: <epstopdf --outfile=std_w_1pt12_ep_pt05_Nens_51
+2_sig0_2sqrt2-eps-converted-to.pdf std_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2.eps
+>
+(epstopdf)             \includegraphics on input line 271.
+Package epstopdf Info: Output file is already uptodate.
+
+<std_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=80, 794.97pt
+ x 496.85625pt>
+File: std_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use std_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: std_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted
+-to.pdf used on input line 271.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+Package epstopdf Info: Source file: <kts_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2.e
+ps>
+(epstopdf)                    date: 2019-09-24 08:45:46
+(epstopdf)                    size: 19484 bytes
+(epstopdf)             Output file: <kts_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2019-09-24 08:47:17
+(epstopdf)                    size: 6396 bytes
+(epstopdf)             Command: <epstopdf --outfile=kts_w_1pt12_ep_pt05_Nens_51
+2_sig0_2sqrt2-eps-converted-to.pdf kts_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2.eps
+>
+(epstopdf)             \includegraphics on input line 271.
+Package epstopdf Info: Output file is already uptodate.
+
+<kts_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf, id=81, 794.97pt
+ x 496.85625pt>
+File: kts_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use kts_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>
+Package pdftex.def Info: kts_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted
+-to.pdf used on input line 271.
+(pdftex.def)             Requested size: 172.79846pt x 107.99712pt.
+
+Overfull \hbox (9.59692pt too wide) in paragraph at lines 268--274
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <kurtosis_fit_om_0_Nens_128.eps>
+(epstopdf)                    date: 2019-09-20 15:31:06
+(epstopdf)                    size: 55551 bytes
+(epstopdf)             Output file: <kurtosis_fit_om_0_Nens_128-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2019-09-20 15:55:42
+(epstopdf)                    size: 26233 bytes
+(epstopdf)             Command: <epstopdf --outfile=kurtosis_fit_om_0_Nens_128-
+eps-converted-to.pdf kurtosis_fit_om_0_Nens_128.eps>
+(epstopdf)             \includegraphics on input line 283.
+Package epstopdf Info: Output file is already uptodate.
+
+<kurtosis_fit_om_0_Nens_128-eps-converted-to.pdf, id=82, 1445.4pt x 720.6925pt>
+File: kurtosis_fit_om_0_Nens_128-eps-converted-to.pdf Graphic file (type pdf)
+<use kurtosis_fit_om_0_Nens_128-eps-converted-to.pdf>
+Package pdftex.def Info: kurtosis_fit_om_0_Nens_128-eps-converted-to.pdf used o
+n input line 283.
+(pdftex.def)             Requested size: 288.0011pt x 143.59709pt.
+Package epstopdf Info: Source file: <kurtosis_fit_om_nh_Nens_128.eps>
+(epstopdf)                    date: 2019-09-20 15:31:13
+(epstopdf)                    size: 56641 bytes
+(epstopdf)             Output file: <kurtosis_fit_om_nh_Nens_128-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2019-09-20 16:00:52
+(epstopdf)                    size: 26341 bytes
+(epstopdf)             Command: <epstopdf --outfile=kurtosis_fit_om_nh_Nens_128
+-eps-converted-to.pdf kurtosis_fit_om_nh_Nens_128.eps>
+(epstopdf)             \includegraphics on input line 285.
+Package epstopdf Info: Output file is already uptodate.
+
+<kurtosis_fit_om_nh_Nens_128-eps-converted-to.pdf, id=83, 1445.4pt x 720.6925pt
+>
+File: kurtosis_fit_om_nh_Nens_128-eps-converted-to.pdf Graphic file (type pdf)
+ <use kurtosis_fit_om_nh_Nens_128-eps-converted-to.pdf>
+Package pdftex.def Info: kurtosis_fit_om_nh_Nens_128-eps-converted-to.pdf used 
+on input line 285.
+(pdftex.def)             Requested size: 288.0011pt x 143.59709pt.
+Package epstopdf Info: Source file: <kurtosis_fit_om_1pt12_Nens_128.eps>
+(epstopdf)                    date: 2019-09-20 15:30:59
+(epstopdf)                    size: 55501 bytes
+(epstopdf)             Output file: <kurtosis_fit_om_1pt12_Nens_128-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2019-03-08 12:28:57
-(epstopdf)                    size: 18964 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega_n1_ep0pt1_dt5en4_widt
-h12-eps-converted-to.pdf omega_n1_ep0pt1_dt5en4_width12.eps>
-(epstopdf)             \includegraphics on input line 205.
+(epstopdf)                    date: 2019-09-20 15:55:47
+(epstopdf)                    size: 26307 bytes
+(epstopdf)             Command: <epstopdf --outfile=kurtosis_fit_om_1pt12_Nens_
+128-eps-converted-to.pdf kurtosis_fit_om_1pt12_Nens_128.eps>
+(epstopdf)             \includegraphics on input line 287.
 Package epstopdf Info: Output file is already uptodate.
 
-<omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf, id=33, 794.97pt x 540.017
+<kurtosis_fit_om_1pt12_Nens_128-eps-converted-to.pdf, id=84, 1445.4pt x 720.692
 5pt>
-File: omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf Graphic file (type pd
+File: kurtosis_fit_om_1pt12_Nens_128-eps-converted-to.pdf Graphic file (type pd
 f)
- <use omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf>
-Package pdftex.def Info: omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf us
-ed on input line 205.
-(pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
-Package epstopdf Info: Source file: <omega_n1_ep0pt04_width12.eps>
-(epstopdf)                    date: 2019-03-08 12:26:15
-(epstopdf)                    size: 55080 bytes
-(epstopdf)             Output file: <omega_n1_ep0pt04_width12-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2019-03-08 12:29:23
-(epstopdf)                    size: 17360 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega_n1_ep0pt04_width12-ep
-s-converted-to.pdf omega_n1_ep0pt04_width12.eps>
-(epstopdf)             \includegraphics on input line 207.
-Package epstopdf Info: Output file is already uptodate.
-
-<omega_n1_ep0pt04_width12-eps-converted-to.pdf, id=34, 794.97pt x 540.0175pt>
-File: omega_n1_ep0pt04_width12-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega_n1_ep0pt04_width12-eps-converted-to.pdf>
-Package pdftex.def Info: omega_n1_ep0pt04_width12-eps-converted-to.pdf used on 
-input line 207.
-(pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
-Package epstopdf Info: Source file: <omega0_ep0pt1.eps>
-(epstopdf)                    date: 2019-03-08 12:52:40
-(epstopdf)                    size: 32954 bytes
-(epstopdf)             Output file: <omega0_ep0pt1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-08 13:05:26
-(epstopdf)                    size: 9037 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega0_ep0pt1-eps-converted
--to.pdf omega0_ep0pt1.eps>
-(epstopdf)             \includegraphics on input line 223.
-Package epstopdf Info: Output file is already uptodate.
-
-<omega0_ep0pt1-eps-converted-to.pdf, id=35, 794.97pt x 540.0175pt>
-File: omega0_ep0pt1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega0_ep0pt1-eps-converted-to.pdf>
-Package pdftex.def Info: omega0_ep0pt1-eps-converted-to.pdf used on input line 
-223.
-(pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
-Package epstopdf Info: Source file: <omega0_ep0pt04.eps>
-(epstopdf)                    date: 2019-03-08 12:56:21
-(epstopdf)                    size: 34759 bytes
-(epstopdf)             Output file: <omega0_ep0pt04-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-08 13:05:27
-(epstopdf)                    size: 9485 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega0_ep0pt04-eps-converte
-d-to.pdf omega0_ep0pt04.eps>
-(epstopdf)             \includegraphics on input line 225.
-Package epstopdf Info: Output file is already uptodate.
-
-<omega0_ep0pt04-eps-converted-to.pdf, id=36, 794.97pt x 540.0175pt>
-File: omega0_ep0pt04-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega0_ep0pt04-eps-converted-to.pdf>
-Package pdftex.def Info: omega0_ep0pt04-eps-converted-to.pdf used on input line
- 225.
-(pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
-Package epstopdf Info: Source file: <omega0_ep0pt1_width6.eps>
-(epstopdf)                    date: 2019-03-08 12:54:45
-(epstopdf)                    size: 55352 bytes
-(epstopdf)             Output file: <omega0_ep0pt1_width6-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2019-03-08 13:05:27
-(epstopdf)                    size: 18032 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega0_ep0pt1_width6-eps-co
-nverted-to.pdf omega0_ep0pt1_width6.eps>
-(epstopdf)             \includegraphics on input line 235.
-Package epstopdf Info: Output file is already uptodate.
-
-<omega0_ep0pt1_width6-eps-converted-to.pdf, id=37, 794.97pt x 540.0175pt>
-File: omega0_ep0pt1_width6-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega0_ep0pt1_width6-eps-converted-to.pdf>
-Package pdftex.def Info: omega0_ep0pt1_width6-eps-converted-to.pdf used on inpu
-t line 235.
-(pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
-Package epstopdf Info: Source file: <omega0_ep0pt04_width6.eps>
-(epstopdf)                    date: 2019-03-08 12:57:07
-(epstopdf)                    size: 54946 bytes
-(epstopdf)             Output file: <omega0_ep0pt04_width6-eps-converted-to.pdf
->
-(epstopdf)                    date: 2019-03-08 13:05:28
-(epstopdf)                    size: 15341 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega0_ep0pt04_width6-eps-c
-onverted-to.pdf omega0_ep0pt04_width6.eps>
-(epstopdf)             \includegraphics on input line 237.
-Package epstopdf Info: Output file is already uptodate.
-
-<omega0_ep0pt04_width6-eps-converted-to.pdf, id=38, 794.97pt x 540.0175pt>
-File: omega0_ep0pt04_width6-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega0_ep0pt04_width6-eps-converted-to.pdf>
-Package pdftex.def Info: omega0_ep0pt04_width6-eps-converted-to.pdf used on inp
-ut line 237.
-(pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
-Package epstopdf Info: Source file: <omega1_ep0pt1.eps>
-(epstopdf)                    date: 2019-03-08 12:59:11
-(epstopdf)                    size: 31980 bytes
-(epstopdf)             Output file: <omega1_ep0pt1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-08 13:05:28
-(epstopdf)                    size: 8709 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega1_ep0pt1-eps-converted
--to.pdf omega1_ep0pt1.eps>
-(epstopdf)             \includegraphics on input line 251.
-Package epstopdf Info: Output file is already uptodate.
-
-<omega1_ep0pt1-eps-converted-to.pdf, id=39, 794.97pt x 540.0175pt>
-File: omega1_ep0pt1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega1_ep0pt1-eps-converted-to.pdf>
-Package pdftex.def Info: omega1_ep0pt1-eps-converted-to.pdf used on input line 
-251.
-(pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
-Package epstopdf Info: Source file: <omega1_ep0pt04.eps>
-(epstopdf)                    date: 2019-03-08 13:00:39
-(epstopdf)                    size: 33505 bytes
-(epstopdf)             Output file: <omega1_ep0pt04-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-08 13:05:29
-(epstopdf)                    size: 9131 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega1_ep0pt04-eps-converte
-d-to.pdf omega1_ep0pt04.eps>
-(epstopdf)             \includegraphics on input line 253.
-Package epstopdf Info: Output file is already uptodate.
-
-<omega1_ep0pt04-eps-converted-to.pdf, id=40, 794.97pt x 540.0175pt>
-File: omega1_ep0pt04-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega1_ep0pt04-eps-converted-to.pdf>
-Package pdftex.def Info: omega1_ep0pt04-eps-converted-to.pdf used on input line
- 253.
-(pdftex.def)             Requested size: 306.0022pt x 207.8703pt.
-Package epstopdf Info: Source file: <omega1_ep0pt1_width3.eps>
-(epstopdf)                    date: 2019-03-08 12:59:54
-(epstopdf)                    size: 55659 bytes
-(epstopdf)             Output file: <omega1_ep0pt1_width3-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2019-03-08 13:05:29
-(epstopdf)                    size: 16206 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega1_ep0pt1_width3-eps-co
-nverted-to.pdf omega1_ep0pt1_width3.eps>
-(epstopdf)             \includegraphics on input line 263.
-Package epstopdf Info: Output file is already uptodate.
-
-<omega1_ep0pt1_width3-eps-converted-to.pdf, id=41, 794.97pt x 540.0175pt>
-File: omega1_ep0pt1_width3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega1_ep0pt1_width3-eps-converted-to.pdf>
-Package pdftex.def Info: omega1_ep0pt1_width3-eps-converted-to.pdf used on inpu
-t line 263.
-(pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
-Package epstopdf Info: Source file: <omega1_ep0pt04_width3.eps>
-(epstopdf)                    date: 2019-03-08 13:06:08
-(epstopdf)                    size: 53880 bytes
-(epstopdf)             Output file: <omega1_ep0pt04_width3-eps-converted-to.pdf
->
-(epstopdf)                    date: 2019-03-08 13:06:11
-(epstopdf)                    size: 13712 bytes
-(epstopdf)             Command: <epstopdf --outfile=omega1_ep0pt04_width3-eps-c
-onverted-to.pdf omega1_ep0pt04_width3.eps>
-(epstopdf)             \includegraphics on input line 265.
-Package epstopdf Info: Output file is already uptodate.
-
-<omega1_ep0pt04_width3-eps-converted-to.pdf, id=42, 794.97pt x 540.0175pt>
-File: omega1_ep0pt04_width3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use omega1_ep0pt04_width3-eps-converted-to.pdf>
-Package pdftex.def Info: omega1_ep0pt04_width3-eps-converted-to.pdf used on inp
-ut line 265.
-(pdftex.def)             Requested size: 233.9978pt x 158.94946pt.
-
+ <use kurtosis_fit_om_1pt12_Nens_128-eps-converted-to.pdf>
+Package pdftex.def Info: kurtosis_fit_om_1pt12_Nens_128-eps-converted-to.pdf us
+ed on input line 287.
+(pdftex.def)             Requested size: 288.0011pt x 143.59709pt.
+ [10 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeu
+p/pdf_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf> <D:/My Documents/D
+esktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/mean_w_0_ep_pt05_Nens
+_512_sig0_2sqrt2-eps-converted-to.pdf> <D:/My Documents/Desktop/Vorticity_and_S
+tatistics_Project_Git_Clone/Writeup/std_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-co
+nverted-to.pdf> <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_C
+lone/Writeup/kts_w_0_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>] [11 <D
+:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/pdf_w
+_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf> <D:/My Documents/Desktop
+/Vorticity_and_Statistics_Project_Git_Clone/Writeup/mean_w_nhf_ep_pt05_Nens_512
+_sig0_1pt05-eps-converted-to.pdf> <D:/My Documents/Desktop/Vorticity_and_Statis
+tics_Project_Git_Clone/Writeup/std_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-conver
+ted-to.pdf> <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone
+/Writeup/kts_w_nhf_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>] [12 <D:/M
+y Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/pdf_w_nh
+f_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf> <D:/My Documents/Desktop/V
+orticity_and_Statistics_Project_Git_Clone/Writeup/mean_w_nhf_ep_pt05_Nens_512_s
+ig0_2sqrt2-eps-converted-to.pdf> <D:/My Documents/Desktop/Vorticity_and_Statist
+ics_Project_Git_Clone/Writeup/std_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-conver
+ted-to.pdf> <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone
+/Writeup/kts_w_nhf_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf>] [13 <D:/
+My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/pdf_w_1
+pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf> <D:/My Documents/Desktop
+/Vorticity_and_Statistics_Project_Git_Clone/Writeup/mean_w_1pt12_ep_pt05_Nens_5
+12_sig0_1pt05-eps-converted-to.pdf> <D:/My Documents/Desktop/Vorticity_and_Stat
+istics_Project_Git_Clone/Writeup/std_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-co
+nverted-to.pdf> <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_C
+lone/Writeup/kts_w_1pt12_ep_pt05_Nens_512_sig0_1pt05-eps-converted-to.pdf>]
 ("D:\My Documents\Desktop\Vorticity_and_Statistics_Project_Git_Clone\Writeup\ra
-ndom_vorticity.bbl" [6]
-Overfull \vbox (24.32079pt too high) has occurred while \output is active []
+ndom_vorticity.bbl" [14 <D:/My Documents/Desktop/Vorticity_and_Statistics_Proje
+ct_Git_Clone/Writeup/pdf_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.
+pdf> <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeu
+p/mean_w_1pt12_ep_pt05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf> <D:/My Docume
+nts/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/std_w_1pt12_ep_p
+t05_Nens_512_sig0_2sqrt2-eps-converted-to.pdf> <D:/My Documents/Desktop/Vortici
+ty_and_Statistics_Project_Git_Clone/Writeup/kts_w_1pt12_ep_pt05_Nens_512_sig0_2
+sqrt2-eps-converted-to.pdf>] [15 <D:/My Documents/Desktop/Vorticity_and_Statist
+ics_Project_Git_Clone/Writeup/kurtosis_fit_om_0_Nens_128-eps-converted-to.pdf> 
+<D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/kur
+tosis_fit_om_nh_Nens_128-eps-converted-to.pdf> <D:/My Documents/Desktop/Vortici
+ty_and_Statistics_Project_Git_Clone/Writeup/kurtosis_fit_om_1pt12_Nens_128-eps-
+converted-to.pdf>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¨ in font cmr10!
 
+Underfull \hbox (badness 1888) in paragraph at lines 62--66
+[]\OT1/cmr/m/n/10.95 D. Eeltink, A. Ar-maroli, Y.M. Ducime-tire, J. Kas-par-ian
+, and
+ []
 
-[7 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/
-omega_n1_ep0pt1_dt5en4-eps-converted-to.pdf> <D:/My Documents/Desktop/Vorticity
-_and_Statistics_Project_Git_Clone/Writeup/omega_n1_ep0pt04-eps-converted-to.pdf
->] [8 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Git_Clone/Write
-up/omega_n1_ep0pt1_dt5en4_width12-eps-converted-to.pdf> <D:/My Documents/Deskto
-p/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega_n1_ep0pt04_width12-e
-ps-converted-to.pdf>] [9 <D:/My Documents/Desktop/Vorticity_and_Statistics_Proj
-ect_Git_Clone/Writeup/omega0_ep0pt1-eps-converted-to.pdf> <D:/My Documents/Desk
-top/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega0_ep0pt04-eps-conve
-rted-to.pdf>]) [10 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Gi
-t_Clone/Writeup/omega0_ep0pt1_width6-eps-converted-to.pdf> <D:/My Documents/Des
-ktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega0_ep0pt04_width6-e
-ps-converted-to.pdf>] [11 <D:/My Documents/Desktop/Vorticity_and_Statistics_Pro
-ject_Git_Clone/Writeup/omega1_ep0pt1-eps-converted-to.pdf> <D:/My Documents/Des
-ktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega1_ep0pt04-eps-conv
-erted-to.pdf>] [12 <D:/My Documents/Desktop/Vorticity_and_Statistics_Project_Gi
-t_Clone/Writeup/omega1_ep0pt1_width3-eps-converted-to.pdf> <D:/My Documents/Des
-ktop/Vorticity_and_Statistics_Project_Git_Clone/Writeup/omega1_ep0pt04_width3-e
-ps-converted-to.pdf>]
+) [16]
 ("D:\My Documents\Desktop\Vorticity_and_Statistics_Project_Git_Clone\Writeup\ra
 ndom_vorticity.aux") ) 
 Here is how much of TeX's memory you used:
- 2508 strings out of 493921
- 34607 string characters out of 3147276
- 93918 words of memory out of 3000000
- 5746 multiletter control sequences out of 15000+200000
+ 2586 strings out of 493921
+ 40061 string characters out of 3147276
+ 97911 words of memory out of 3000000
+ 5809 multiletter control sequences out of 15000+200000
  12319 words of font info for 46 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,12n,26p,1353b,306s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,26p,1590b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
@@ -495,9 +907,9 @@ Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on random_vorticity.pdf (12 pages, 342375 bytes).
+Output written on random_vorticity.pdf (16 pages, 450317 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
+ 226 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
