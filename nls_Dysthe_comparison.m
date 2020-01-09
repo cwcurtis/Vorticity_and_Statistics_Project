@@ -75,12 +75,14 @@ function [nls_avg,nls_std,nls_kts,nls_bfi,dysthe_avg,dysthe_std,dysthe_kts,dysth
     plot(kvec,pdist_int,'k:',kvec,pdist_nls,'k--',kvec,pdist_dysthe,'k-','LineWidth',2)
     h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
+    xlim([-5,5])
     xlabel('$k$','Interpreter','LaTeX','FontSize',30)
     ylabel('$S(k,\tau_{f},\sigma)$','Interpreter','LaTeX','FontSize',30)
     %legend({'Initial','NLS','Dysthe'},'Interpreter','LaTeX','FontSize',30)
     
     figure(2)
     plot(samp_times,nls_avg_plot,'k--',samp_times,dysthe_avg_plot,'k-','LineWidth',2)
+    h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
     xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
     ylabel('$m(\tau)$','Interpreter','LaTeX','FontSize',30)
@@ -88,6 +90,7 @@ function [nls_avg,nls_std,nls_kts,nls_bfi,dysthe_avg,dysthe_std,dysthe_kts,dysth
         
     figure(3)
     plot(samp_times,nls_std_plot,'k--',samp_times,dysthe_std_plot,'k-','LineWidth',2)
+    h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
     xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
     ylabel('$\tilde{\sigma}(\tau)$','Interpreter','LaTeX','FontSize',30)
@@ -95,12 +98,14 @@ function [nls_avg,nls_std,nls_kts,nls_bfi,dysthe_avg,dysthe_std,dysthe_kts,dysth
     
     figure(4)
     plot(samp_times,nls_skw_plot,'k--',samp_times,dysthe_skw_plot,'k-','LineWidth',2)
+    h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
     xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
     ylabel('$\tilde{s}(\tau)$','Interpreter','LaTeX','FontSize',30)
         
     figure(5)
     plot(samp_times,nls_kts_plot,'k--',samp_times,dysthe_kts_plot,'k-','LineWidth',2)
+    h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
     xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
     ylabel('$\tilde{k}(\tau)$','Interpreter','LaTeX','FontSize',30)
@@ -108,6 +113,7 @@ function [nls_avg,nls_std,nls_kts,nls_bfi,dysthe_avg,dysthe_std,dysthe_kts,dysth
     
     figure(6)
     plot(samp_times,nls_bfi_plot,'k--',samp_times,dysthe_bfi_plot,'k-','LineWidth',2)
+    h = set(gca,'FontSize',30);
     set(h,'Interpreter','LaTeX')
     xlabel('$\tau$','Interpreter','LaTeX','FontSize',30)
     ylabel('$BFI(\tau)$','Interpreter','LaTeX','FontSize',30)

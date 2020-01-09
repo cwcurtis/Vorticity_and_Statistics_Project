@@ -53,7 +53,7 @@
 A central question in sea-state modeling is the role that various physical effects have on the evolution of the statistical properties of random sea states.  This becomes a critical issue when one is concerned with the likelihood of rare events such as rogue, or freak, waves which can have significant destructive potential on deep sea ships and other offshore structures.  In this paper then, using a recently derived higher-order model of deep water nonlinear waves, we examine the impact of constant vorticity currents on the statistical properties of nonlinearly evolving random sea states.  As we show, these currents can both decrease and increase the kurtosis of the affiliated distributions of the sea states, thereby diminishing or enhancing the likelihood of rare events.   We likewise numerically study the relationship between the kurtosis and a non-dimensional parameter, the Benjamin--Feir Index, which has proven to be a useful measure of when rare events are likely in oceanographic application.  
 
 \section{Introduction}
-There is now a wide range of literature which shows that nonlinear instabilities, in particular the modulational instability (MI), are responsible for significant modifications to the statistical properties of water waves; see \cite{dysthe2,dysthe3,onorato,thomas2012nonlinear} among others.   As explained in \cite{janssen}, MI is especially important due to the relative rapidity with which it acts, being orders of magnitude faster than say four-wave resonant interactions which form the traditional backbone of our understanding of how nonlinearity drives changes in statistics of random-wave fields \cite{hasselmann,holthuijsen}.  A detailed set of theoretical and experimental results \cite{sergeeva1,sergeeva2,sergeeva3,sergeeva4} have also shown that MI could play a significant role in unidirectional deep-water-rogue wave formation among other oceanographic phenomena.  It is important to note though that there are several possible mechanisms for rogue-wave generation; see \cite{fedele} for example which rules out MI as a mechanism altogether.  
+There is now a wide range of literature which shows that nonlinear instabilities, in particular the modulational instability (MI), are responsible for significant modifications to the statistical properties of water waves; see \cite{dysthe2,dysthe3,onorato,thomas2012nonlinear} among others.   As explained in \cite{janssen}, MI is especially important due to the relative rapidity with which it acts, being orders of magnitude faster than say four-wave resonant interactions which form the traditional backbone of our understanding of how nonlinearity drives changes in statistics of random-wave fields \cite{hasselmann,holthuijsen}.  A detailed set of theoretical and experimental results \cite{sergeeva1,sergeeva2,sergeeva3,sergeeva4} have also shown that MI could play a significant role in unidirectional deep-water-rogue wave formation among other oceanographic phenomena.  It is important to note though that there are several possible mechanisms for rogue-wave generation; see \cite{fedele} for example which rules out MI as a mechanism altogether in certain oceanic conditions.  
 
 However, much of the understanding around MI relies on highly idealized assumptions which cannot be expected to hold in natural settings.  In particular, most analytic understandings of MI rely on looking at the stability of perturbations to carrier waves at essentially a fixed wave number.  To address this shortcoming, in now seminal papers, \cite{alber} and \cite{alber2} analytically studied families of perturbations of wave packets with narrow, but non-zero, spectral width around a central wave number.  Using the Nonlinear Schr\"{o}dinger equation (NLSE), an analytic criterion determining when MI is either manifested or suppressed depending on this spectral width, now referred to as a Benjamin--Feir index (BFI) was derived.  The results in \cite{alber} were explored numerically in \cite{dysthe2,dysthe3} by examining the mean properties associated with ensembles of initial conditions.  
 
@@ -80,7 +80,7 @@ where $\phi$ is a harmonic function.  We restrict fluid motion to the $(x,z)$-pl
 \eta_{t} +\left(\omega\eta+\phi_{x}\right)\eta_{x} - \phi_{z} = 0, & & z=\eta(x,t), \label{kine}\\
 \phi_{t} + \omega\pd_{x}^{-1}\eta_{t} + \frac{1}{2} \left|{\bf
     u}\right|^{2} + g\eta -
-\frac{\sigma}{\rho}\pd_{x}\frac{\eta_{x}}{\sqrt{1+\eta_{x}^{2}}}= 0, &
+\frac{\sigma_{s}}{\rho}\pd_{x}\frac{\eta_{x}}{\sqrt{1+\eta_{x}^{2}}}= 0, &
 & z=\eta(x,t), \label{bernou}\\
 \lim_{z\rightarrow -\infty} \phi_{z} = 0, \nonumber
 \end{align}
@@ -100,9 +100,9 @@ where $\tau = \epsilon^{2}t$, $\xi = \epsilon(x+c_{g}t)$, and $\theta(x,t) = k_{
 \[
 \Omega(k_{0},\omega) = \frac{1}{2}\left(s\omega \pm \sqrt{\omega^{2} + 4|k_{0}|\left(1+\tilde{\sigma}_{s}k_{0}^{2}\right)} \right).
 \]
-We note that the form for $\phi$ follows directly from this expansion, allowing for everything to be modeled by the terms in the expansion in $\eta$.  Here, $s = \mbox{sgn}(k_{0})$, $\omega$ is the non-dimensionalized magnitude of the vorticity of the flow, and $\tilde{\sigma}_{s}$ is the surface tension, or where the reciprocal of the Bond number, $\tilde{\sigma}$, is given by
+We note that the form for $\phi$ follows directly from this expansion, allowing for everything to be modeled by the terms in the expansion in $\eta$.  Here, $s = \mbox{sgn}(k_{0})$, $\omega$ is the non-dimensionalized magnitude of the vorticity of the flow, and $\tilde{\sigma}_{s}$ is the non-dimensional surface tension given by
 \[
-\tilde{\sigma}_{s} = \frac{\sigma}{\rho g L_{p}^2}.
+\tilde{\sigma}_{s} = \frac{\sigma_{s}}{\rho g L_{p}^2}.
 \]
 Throughout the remainder of this paper, we take the positive branch $+$ of the dispersion relationship, thereby ensuring that $\Omega > 0$.  Thus, for $k_{0}>0$, the surface waves to leading order propagate to the left.  Thus, if $\omega>0$, then throughout the bulk of the fluid, the shear current propagates with the surface waves, or is {\it co-propagating}, while for $\omega<0$, we say the shear current is {\it counter-propagating}.  
 
@@ -142,7 +142,7 @@ c_{h} = 2sc_{g}(2sc_{g}\alpha_{d}+\tilde{\sigma}_{s})/(\omega-2s\Omega) - s\alph
 \]
 was necessary to remove artificial instabilities.  Similar issues with Dysthe like equations have been noted in \cite{eeltink} among other sources; see the Appendix for a discussion of this issue.  Moreover, the coefficients $\tilde{\alpha}_{j}$ are readily derived, but their forms are cumbersome and thus we omit explicitly writing them for the sake of readability.  
 
-The traditional definition of modulational instability (MI) begins by studying the stability of the plane-wave, or Stokes wave, solutions of the NLS equation given by
+The traditional definition of modulational instability (MI) begins by studying the stability of the plane-wave, or Stokes wave, solutions of the NLSE given by
 \[
 \eta_{1}(\xi,\tau) = A e^{i\alpha_{nl}A^{2}\tau},
 \]
@@ -178,7 +178,7 @@ Note, this definition is identical with the spectral width criterion of \cite{al
 \sigma_{c} = \sqrt{\frac{\alpha_{nl}}{\alpha_{d}}}\epsilon_{rms}.
 \]
 
-However, \cite{alber} does not present numerical verification of their results, and \cite{dysthe2} is relatively brief in their verification of the BFI condition.  The work in \cite{janssen} shows that the BFI condition does not yield a clear bifurcation in stability.  Our results likewise support this.  However, also shown in \cite{janssen} and followed up on in several later works; see \cite{onorato,slunyaev,eeltink}, it is shown that the kurtosis of the corresponding distribution of the surface waves, say $\tilde{k}(\tau)$ is a quadratic function of the time evolving $\mbox{BFI}(\tau)$.   We likewise aim to establish a similar relationship, thereby maintaining the utility of the BFI insofar as it then helps predict a key feature of nonlinear-random wave fields. 
+However, \cite{alber} does not present numerical verification of their results, and \cite{dysthe2} is relatively brief in their verification of the BFI condition.  The work in \cite{janssen} shows that the BFI condition does not yield a clear bifurcation in stability.  Our results likewise support this.  However, also shown in \cite{janssen} and followed up on in several later works; see \cite{onorato,slunyaev,eeltink}, it is shown that the kurtosis of the corresponding quasi-steady distribution of the surface waves, say $\tilde{k}(\tau_{f})$, where we take $\tau_{f}$ to be the timescale over which MI acts, is a quadratic function of the the $\mbox{BFI}$.   We likewise aim to establish a similar relationship, thereby maintaining the utility of the BFI insofar as it then helps predict a key feature of nonlinear-random wave fields. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -186,7 +186,7 @@ To understand the relationship between the vorticity $\omega$ and the initial sp
 \[
 \tau_{f}=\max\left\{1.5/\alpha_{nl},1\right\},
 \]
-so that MI has a sufficiently long enough time scale over which to act; see \cite{curtis8} for a derivation of this result.  We choose $L=5\pi$ so that the computational domain is $[-5\pi,5\pi]$.  The number of modes is $K_{T} = 1024$ or $K=512$.  Letting the length scale $L_{p}=1m$, the non-dimensional surface tension is $\tilde{\sigma}_{s} = 10^{-5}$.  It is thus ignored throughout the remainder of the paper.  We then compute the averaged spectral density $S(k,\tau;\sigma)$ where 
+so that MI has a sufficiently long enough time scale over which to act; see \cite{curtis8} for a derivation of this result.  We choose $L=5\pi$ so that the computational domain is $[-5\pi,5\pi]$.  The number of modes is $K_{T} = 1024$ or $K=512$.  Letting the length scale $L_{p}=1~m$, the non-dimensional surface tension is $\tilde{\sigma}_{s} = 10^{-5}$.  It is thus ignored throughout the remainder of the paper.  We then compute the averaged spectral density $S(k,\tau;\sigma)$ where 
 \[
 S\left(k,\tau;\sigma\right) \sim \overline{\left( \left|\hat{\eta}_{1}\left(k,\tau;\sigma \right)\right|^{2}\right)},
 \]
