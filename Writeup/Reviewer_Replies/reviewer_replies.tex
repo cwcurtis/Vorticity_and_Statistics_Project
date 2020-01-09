@@ -1,0 +1,146 @@
+ \documentclass[a4paper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{update}
+
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\bt}{\begin{tabular}}
+\newcommand{\et}{\end{tabular}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+
+\newcommand{\bp}{\begin{pmatrix}}
+\newcommand{\ep}{\end{pmatrix}}
+
+\newcommand{\pd}{\partial}
+\newcommand{\sech}{\mbox{sech}}
+
+\newcommand{\cf}{{\it cf.}~}
+
+\newcommand{\ltwo}{L_{2}(\mathbb{R}^{2})}
+\newcommand{\smooth}{C^{\infty}_{0}(\mathbb{R}^{2})}
+
+\newcommand{\br}{{\bf r}}
+\newcommand{\bk}{{\bf k}}
+\newcommand{\bv}{{\bf v}}
+
+\newcommand{\gnorm}[1]{\left|\left| #1\right|\right|}
+\newcommand{\ipro}[2]{\left<#1,#2 \right>}
+
+\begin{document}
+\noindent To the Editor,\\
+\\
+\indent We wish to thank the reviewers for their helpful comments, insights, and suggestions.  The paper is stronger for their efforts.  See below for a list of replies to their comments.  \\
+\\
+\noindent Sincerely,\\
+\\
+Christopher W. Curtis \\
+Mackensie Murpy
+\subsection*{Replies to the First Reviewer}
+\begin{itemize}
+\item {\it The authors chose the flow with constant vorticity for simplicity. For the finite depth this assumption looks physically correct, but for deep water it leads to the infinity values of velocities, and the problem becomes only an academic one.}  
+
+This comment is an accurate description of our work as it stands.  To address this issue, we have added in the Appendix an examination of the dispersion relationship of a more realistic shear profile which we show generates results very close to those used in the paper.  Thus, while the model we used in the body of the paper for the nonlinear modulation results is not necessarily realistic in all regions of the fluid, the work in the Appendix shows that near the surface it should be sufficient to generate meaningful results. 
+
+\item {\it The surface tension is chosen fixed in simulations, and its role is not evident in the obtained results. This item should either be discussed in the text or the surface tension effect should be omitted.}
+
+We have removed all mention of the surface tension in the Results and the Appendix.  
+
+\item {\it    By the way, the sigma is applied in the text as the surface tension and the standard deviation. It is better to change one definition.
+}
+
+The $\tilde{\sigma}$ was replaced by $\tilde{\sigma}_{s}$ where appropriate.  
+
+\item {\it  I would suggest extending a little the theoretical part of the paper to remind the readers of the modulational instability existence in the NLS and vor-Dysthe equations. It is important because the coefficient sings can be either positive or negative in the general case and their values can tend to infinity.}
+
+A discussion on this point has been added in Section 2 just after the VDE has been introduced and before the discussion of the BFI.  
+
+\item {\it The case with zero vorticity was studied also early in many papers, see below some of them. The comparison between the results obtained in the reviewed paper with the above-mentioned papers should be darwn discussed.} 
+
+References to the four papers were included in the Introduction, and discussion of the results was added throughout the Introduction as well.  Direct comparison of our results to those in said papers is difficult since in this work a space like NLS model is used whereas the referenced papers use a time like one.  Nevertheless, the general similarities in results are commented on in the current revision.   
+\end{itemize}
+
+\subsection*{Replies to the Second Reviewer}
+\begin{itemize}
+\item {\it In the first place, the paper deals with singular phenomena such as rogue waves in the ocean.
+In that case the assumption of one-dimensional propagation should be a very big limitation.
+
+In the framework of one-dimensional propagation, as is well known, modulational instability increases
+and the probability of occurrence of rogue waves increases as the nonlinearity, i.e. BFI, increases.
+
+However, it is also known that if the directional distribution of the spectrum becomes wide to some extent,
+even if the nonlinearity of the system is increased, the occurrence probability of rogue waves and
+the value of kurtosis do not change sensitively. I myself have confirmed this fact by numerical calculation based on HOSM.
+In recent years, the idea that modulational instability is the key mechanism for the generation of rogue waves seems to have
+been questioned considerably.
+In any case, it seems somewhat dangerous to discuss the probability of occurrence of rogue waves in a framework
+based on one-dimensional propagation.}
+
+So while the author understands the reviewers point, this issue is somewhat complicated by the large amount of existing literature which attempts to link MI to rogue-wave formation.  In particular, see the references the other reviewer recommended that the author discuss in this revision.  To thread this proverbial needle then, the author has in the Introduction softened language around rogue waves while adding the references the other reviewer suggested.  To better address the current reviewer's point though, a citation of the 2016 Scientific Reports paper by Fedele et. al. is provided which presents a counterpoint to the argument that MI is responsible for rogue wave formation.  Hopefully this strikes a more appropriate balance between the various points of view on this complicated issue.  
+
+\item {\it Is it necessary to consider surface tension when talking about rogue waves?
+I wonder how short wavelength scale the authors have in mind.
+}
+
+The authors have removed all mention of the surface tension in the Results section of the paper.  A brief explanation for this decision was provided at the beginnning of the Results section.    
+
+\item {\it In page 5, an artificial additional term that does not appear in systematic perturbation analysis seems to be  added to the Dysthe model.
+I want some more comments about it.
+I do not understand why the numerical instability can be suppressed by the effect of higher-order dispersion rather than dissipation.}
+
+As to this point, the authors have included results in the Appendix clearly explaining the need for the higher-order term in the dispersion relation used in the VDE.  
+
+\item {\it I cannot understand the principle of numbering of equations.
+Only three specific equations are numbered throughout the paper. In what sense do these equations need special treatment?
+Why are the other equations not numbered?}
+
+The authors follow the convention of only numbering those equations which are directly referred to in the body of the text.  The authors generally believe this vastly increases the readability of a paper.  Some inconsistencies in the prior draft though were corrected.  
+
+\item {\it How realistic is the value of $\omega=-0.5$ or $\omega=1.12$ which are employed in the work?
+What kind of situations do these setting correspond to when returning to the actual physical quantities with dimensions?}
+
+A brief discussion of this point has been added to Section 2 when discussing the non-dimensionalization of the system.  In the end, a choice of $\omega = \mathcal{O}(1)$ corresponds to a wave with a meter long wavelength moving over a current whose horizontal velocity is $300 ~cm/s$ at a depth of one meter below the surface.  While fast, this is not unheard of in real oceanic circumstances, and that rare currents might themselves enhance the likelihood rare events is an interesting issue to explore.    
+
+\item {\it In Fig.1(b) through Fig.6 (b), if the spectrum is downshifted, I think $m(\tau)$ should be negative instead of positive.}
+
+This is a reasonable statement, but in the case of the results in the paper, that the peak shifts left but the mean shifts right is in effect a sign of the degree of skewness that the VDE induces in the initial distribution.  A brief explanation of this has been added to Results section in the first case of $\omega=0$.  We do not add a plot of the skewness since this would, in the authors' opinion, clutter the paper.  
+
+\item {\it Does Figure~7 show the relationship between BFI at $t=0$ and the kurtosis at the final time?
+Looking at the time evolution of kurtosis shown in Fig.~5, for example, the wave field seems to be still evolving
+and the kurtosis does not seem to have reached any steady value.
+If the value of kurtosis is still fluctuating largely even at the final time,
+I wonder if it is reasonable to plot the value as a function of the initial BFI or other parameters.
+If it is non-stationary until the final time,
+how about plotting the values of kurtosis $\tilde{k}(\tau)$ and ${\rm BFI}(\tau)$ at each time in the temporal evolution
+to investigate there relationship?}
+
+Yes, the BFI in Fig. 7 is found at $t=0$.  This is done so as to keep with the original Janssen paper which uses this as a predictive mechanism corresponding to one measurement of a given wavefield.  While we appreciate the reviewer's point, we argue that the fluctuations at the final time in the kurtosis in Fig. 5 are not significant.  Moreover, that particular plot represents only one point used in the fit in Fig. 7, so longer time simulations should not produce significant variations in the stated results.  Further, we feel another plot of the type suggested by the reviewer would clutter the paper and deviate away from the point of trying to use the BFI measured at one time as a longer time predictive tool, which it seems to the authors is the real point in the end of studying it at all.  That being all said, we also reran this particular case up to $t_{f}=60$, which is about a factor of 3 times longer than for the figures used in the paper.  The results did not fundamentally change in any significant way.  A note on this point has been added to the relevant part of the text.  
+
+\item {\it Janssen's result that kurtosis is proportional to the square of BFI is derived under the assumptions of one-dimensional
+propagation and narrow band, and the proportionality coefficient can be expressed by the coefficients of NLSE.
+If using Dysthe equation as a model and taking in to account of higher-order nonlinearity, I suppose that this quadratic relationship should be altered.
+If the authors intend to emphasize the importance of the difference between NLSE and Dysthe, in the discussion on Fig.~7 for example,
+I expect the author to argue about the deviation from the quadratic relation which the results of Dysthe equation show in relation
+to the effect of higher-order nonlinearity included only in the Dysthe equation.}
+
+The authors apologize, but they are not entirely clear what the reviewer is asking for on this point.  A brief statement that the higher-order nonlinearities of the VDE are responsible for the differences seen in Figure 7 is in the original draft.  We added a brief expansion on this original statement.  We hope this is what the reviewer was asking for, but we are happy to modify our explanation further if this is not satisfactory.  
+\end{itemize}
+
+\end{document}
